@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build:with-docs",
+  "buildCommand": "npm run build",
   "framework": "nextjs",
   "installCommand": "npm install",
   "headers": [
@@ -8,8 +8,9 @@
       "headers": [
         { "key": "Access-Control-Allow-Origin", "value": "*" },
         { "key": "Access-Control-Allow-Methods", "value": "GET, POST, DELETE, OPTIONS" },
-        { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization" },
-        { "key": "Cache-Control", "value": "public, max-age=3600, s-maxage=3600, stale-while-revalidate=86400" }
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization, Accept" },
+        { "key": "Access-Control-Expose-Headers", "value": "*" },
+        { "key": "Cache-Control", "value": "no-cache" }
       ]
     }
   ],

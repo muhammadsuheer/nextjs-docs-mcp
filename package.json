@@ -6,12 +6,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "download:docs": "tsx scripts/download-docs.ts",
-    "process:docs": "tsx scripts/process-docs-all.ts",
-    "build:with-docs": "npm run download:docs && npm run process:docs && next build",
+    "process-docs": "tsx scripts/build-production-docs.ts",
     "start": "next start",
-    "lint": "eslint",
-    "setup:local": "npm run build:with-docs"
+    "lint": "eslint"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.20.2",

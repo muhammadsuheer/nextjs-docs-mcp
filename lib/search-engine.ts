@@ -3,6 +3,7 @@
 import FlexSearch from 'flexsearch';
 import type { DocMetadata, SearchResult, SearchOptions, SearchMatch } from '@/types';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 type FlexSearchDocument = any;
 
 export class DocumentSearchEngine {
@@ -28,6 +29,7 @@ export class DocumentSearchEngine {
     this.documents = new Map();
     
     // Create FlexSearch index with optimized settings
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     this.index = new (FlexSearch as any).Document({
       document: {
         id: 'id',
@@ -102,6 +104,7 @@ export class DocumentSearchEngine {
     const queries = this.expandQuery(query);
     
     // Perform search with all query variations
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     let allSearchResults: any[] = [];
     for (const q of queries) {
       const results = this.index.search(q, {
@@ -142,7 +145,7 @@ export class DocumentSearchEngine {
         const relevance = this.determineRelevance(score);
         
         // Extract matches
-        const matches = this.extractMatches(query, doc, fieldResults.field as string);
+        const matches = this.extractMatches(query, doc);
         
         results.push({
           doc: includeCodeExamples ? doc : { ...doc, codeBlocks: [] },
@@ -213,7 +216,7 @@ export class DocumentSearchEngine {
   /**
    * Extract matching text snippets
    */
-  private extractMatches(query: string, doc: DocMetadata, field: string): SearchMatch[] {
+  private extractMatches(query: string, doc: DocMetadata): SearchMatch[] {
     const matches: SearchMatch[] = [];
     const queryLower = query.toLowerCase();
     

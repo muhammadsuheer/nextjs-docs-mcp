@@ -237,7 +237,7 @@ export default function Home() {
                 <ol className="text-sm text-gray-700 space-y-1 list-decimal list-inside">
                   <li>Restart your editor</li>
                   <li>Open AI assistant</li>
-                  <li>Ask: <code className="bg-white px-2 py-0.5 rounded border border-gray-200">"Search Next.js docs for server components"</code></li>
+                  <li>Ask: <code className="bg-white px-2 py-0.5 rounded border border-gray-200">&ldquo;Search Next.js docs for server components&rdquo;</code></li>
                 </ol>
               </div>
             </div>
@@ -338,11 +338,10 @@ npm run dev`, 'install')}
                 <span className="px-2 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded border border-blue-200">Primary</span>
               </div>
               <p className="text-gray-600 mb-4">Search documentation with advanced filtering</p>
-              <div className="bg-gray-50 rounded p-3 text-sm space-y-1 font-mono">
+                <div className="bg-gray-50 rounded p-3 text-sm space-y-1 font-mono">
                 <div className="text-gray-600">Parameters:</div>
                 <div className="text-gray-900">• query: string (required)</div>
-                <div className="text-gray-900">• version?: "13" | "14" | "15" | "16" | "latest"</div>
-                <div className="text-gray-900">• category?: "app-router" | "pages-router" | "api-reference"</div>
+                <div className="text-gray-900">• category?: &ldquo;app-router&rdquo; | &ldquo;pages-router&rdquo; | &ldquo;api-reference&rdquo;</div>
                 <div className="text-gray-900">• limit?: number (1-50, default: 10)</div>
                 <div className="text-gray-900">• includeCodeExamples?: boolean</div>
               </div>

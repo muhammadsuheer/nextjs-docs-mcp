@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 interface IDEConfig {
   name: string;
@@ -138,9 +139,9 @@ URL: ${serverUrl}/api/mcp`,
       {/* Simple Header */}
       <header className="border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-          <a href="/" className="text-gray-900 hover:text-gray-600 transition">
-            ← Back to Home
-          </a>
+          <Link href="/" className="text-gray-900 hover:text-gray-600 transition">
+            &larr; Back to Home
+          </Link>
           <a href="https://github.com/muhammadsuheer/nextjs-docs-mcp" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-gray-900">
             GitHub
           </a>
@@ -253,7 +254,7 @@ URL: ${serverUrl}/api/mcp`,
           <h3 className="text-sm font-medium text-gray-900 mb-2">Test Your Setup</h3>
           <p className="text-sm text-gray-600 mb-3">After configuration, restart your IDE and try:</p>
           <code className="block bg-white border border-gray-200 rounded px-3 py-2 text-sm text-gray-800">
-            "Search Next.js docs for server components"
+            &ldquo;Search Next.js docs for server components&rdquo;
           </code>
         </div>
       </div>

@@ -51,10 +51,12 @@ export interface SearchOptions {
 export interface ProcessedDoc {
   metadata: DocMetadata;
   rawContent: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   frontMatter: Record<string, any>;
   searchableContent: string;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export interface CacheEntry<T = any> {
   data: T;
   timestamp: number;

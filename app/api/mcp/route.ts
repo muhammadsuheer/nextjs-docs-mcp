@@ -7,61 +7,44 @@ import path from 'path';
 import { getSearchEngine } from '@/lib/search-engine';
 import { getCached, setCached, generateSearchCacheKey, initRedis } from '@/lib/cache';
 import { DOCS_METADATA_PATH } from '@/lib/constants';
-import { autoDetectDocVersion, detectNextVersion, getDocVersionForNextVersion } from '@/lib/version-detector';
 import type { DocMetadata, SearchOptions } from '@/types';
 
-// Initialize search engine with multi-version support
-const searchEngines: Map<string, ReturnType<typeof getSearchEngine>> = new Map();
-const versionsLoaded: Set<string> = new Set();
+// Initialize search engine (single version - Next.js 16)
+let searchEngine: ReturnType<typeof getSearchEngine> | null = null;
 
-async function ensureDocsLoaded(version?: string) {
-  // Auto-detect version from user's package.json if not provided
-  const targetVersion = version || await autoDetectDocVersion();
-  
-  // Check if this version is already loaded
-  if (versionsLoaded.has(targetVersion) && searchEngines.has(targetVersion)) {
-    return searchEngines.get(targetVersion)!;
+async function ensureDocsLoaded() {
+  // Return cached engine if already loaded
+  if (searchEngine) {
+    return searchEngine;
   }
   
   try {
-    // Try version-specific metadata first
-    let metadataPath = path.join(process.cwd(), `data/docs-metadata-v${targetVersion}.json`);
-    
-    // Fallback to default metadata
-    try {
-      await fs.access(metadataPath);
-    } catch {
-      metadataPath = path.join(process.cwd(), DOCS_METADATA_PATH);
-    }
-    
+    const metadataPath = path.join(process.cwd(), DOCS_METADATA_PATH);
     const content = await fs.readFile(metadataPath, 'utf-8');
     const docs: DocMetadata[] = JSON.parse(content);
     
-    // Initialize search engine for this version
-    const engine = getSearchEngine();
-    engine.addDocuments(docs);
+    // Initialize search engine
+    searchEngine = getSearchEngine();
+    searchEngine.addDocuments(docs);
     
-    searchEngines.set(targetVersion, engine);
-    versionsLoaded.add(targetVersion);
+    // Initialize Redis (optional)
+    initRedis();
     
-    // Initialize Redis (optional) - only once
-    if (versionsLoaded.size === 1) {
-      initRedis();
-    }
+    console.log(`✅ Loaded Next.js documentation (${docs.length} docs)`);
     
-    console.log(`✅ Loaded Next.js ${targetVersion} documentation (${docs.length} docs)`);
-    
-    return engine;
+    return searchEngine;
   } catch {
-    throw new Error(`Documentation not found for version ${targetVersion}. Please run: npm run process-docs && npm run build:index`);
+    throw new Error(`Documentation not found. Please ensure data/docs-metadata.json exists.`);
   }
 }
 
-async function getUserNextVersion(): Promise<string | null> {
-  const versionInfo = await detectNextVersion();
-  if (!versionInfo) return null;
-  
-  return getDocVersionForNextVersion(versionInfo);
+// CORS helper for MCP endpoint
+function addCorsHeaders(response: Response): Response {
+  response.headers.set('Access-Control-Allow-Origin', '*');
+  response.headers.set('Access-Control-Allow-Methods', 'GET, POST, DELETE, OPTIONS');
+  response.headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization, Accept');
+  response.headers.set('Access-Control-Expose-Headers', '*');
+  return response;
 }
 
 const handler = createMcpHandler(
@@ -127,14 +110,11 @@ const handler = createMcpHandler(
     
     server.tool(
       'search_nextjs_docs',
-      'Search Next.js documentation with advanced filters and semantic understanding',
+      'Search Next.js 16 documentation with advanced filters and semantic understanding',
       {
         query: z.string()
           .min(1)
-          .describe('Search query - can be a question or keywords (e.g., "How to use Server Components?" or "Cache Components in Next.js 16")'),
-        version: z.enum(['16', '15', '14', '13', 'latest'])
-          .optional()
-          .describe('Filter by Next.js version'),
+          .describe('Search query - can be a question or keywords (e.g., "How to use Server Components?" or "Cache Components")'),
         category: z.enum(['app-router', 'pages-router', 'api-reference', 'architecture', 'community'])
           .optional()
           .describe('Filter by documentation category'),
@@ -147,16 +127,12 @@ const handler = createMcpHandler(
           .default(true)
           .describe('Include code examples in results'),
       },
-      async ({ query, version, category, limit, includeCodeExamples }) => {
+      async ({ query, category, limit, includeCodeExamples }) => {
         try {
-          // Auto-detect version from user's package.json if not specified
-          const detectedVersion = await getUserNextVersion();
-          const targetVersion = version === 'latest' ? undefined : (version || detectedVersion || undefined);
-          
-          const engine = await ensureDocsLoaded(targetVersion);
+          const engine = await ensureDocsLoaded();
           
           // Check cache first
-          const cacheKey = generateSearchCacheKey(query, { version: targetVersion, category, limit });
+          const cacheKey = generateSearchCacheKey(query, { category, limit });
           const cached = await getCached(cacheKey);
           
           if (cached) {
@@ -171,7 +147,6 @@ const handler = createMcpHandler(
           // Perform search
           const searchOptions: SearchOptions = {
             query,
-            version: version === 'latest' ? undefined : version,
             category,
             limit,
             includeCodeExamples,
@@ -292,16 +267,16 @@ const handler = createMcpHandler(
     
     server.tool(
       'list_nextjs_categories',
-      'Get available Next.js documentation categories and statistics',
+      'Get available Next.js 16 documentation categories and statistics',
       {},
       async () => {
         try {
           const engine = await ensureDocsLoaded();
           const stats = engine.getStats();
           
-          let response = `# Next.js Documentation Statistics\n\n`;
+          let response = `# Next.js 16 Documentation Statistics\n\n`;
           response += `**Total Documents:** ${stats.totalDocuments}\n`;
-          response += `**Versions:** ${stats.versions.join(', ')}\n\n`;
+          response += `**Version:** Next.js 16 (Canary)\n\n`;
           response += `## Categories\n\n`;
           
           Object.entries(stats.categories).forEach(([category, count]) => {
@@ -309,11 +284,11 @@ const handler = createMcpHandler(
           });
           
           response += `\n## Available Categories for Filtering\n\n`;
-          response += `- app-router: App Router documentation\n`;
-          response += `- pages-router: Pages Router documentation\n`;
-          response += `- api-reference: API Reference\n`;
-          response += `- architecture: Architecture guides\n`;
-          response += `- community: Community resources\n`;
+          response += `- **app-router**: App Router documentation (React Server Components, Server Actions, etc.)\n`;
+          response += `- **pages-router**: Pages Router documentation (getStaticProps, getServerSideProps, etc.)\n`;
+          response += `- **api-reference**: Complete API Reference for all Next.js features\n`;
+          response += `- **architecture**: Architecture and internals documentation\n`;
+          response += `- **community**: Community guides and contribution documentation\n`;
           
           return {
             content: [{
@@ -386,9 +361,25 @@ const handler = createMcpHandler(
       }
     );
     
-  }
+  },
+  {}, // Server options
+  { basePath: '/api' } // Handler options
 );
 
 
-export { handler as GET, handler as POST, handler as DELETE };
+// Wrap handlers with CORS
+async function wrappedHandler(request: Request) {
+  // Handle OPTIONS for CORS preflight
+  if (request.method === 'OPTIONS') {
+    return addCorsHeaders(new Response(null, { status: 204 }));
+  }
+  
+  // Call the actual handler
+  const response = await handler(request);
+  
+  // Add CORS headers to response
+  return addCorsHeaders(response);
+}
+
+export { wrappedHandler as GET, wrappedHandler as POST, wrappedHandler as DELETE, wrappedHandler as OPTIONS };
 

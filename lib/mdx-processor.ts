@@ -9,12 +9,16 @@ import { visit } from 'unist-util-visit';
 import type { DocMetadata, DocHeading, CodeBlock, ProcessedDoc } from '@/types';
 import { DOCS_VERSION } from './constants';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function extractHeadings(tree: any): DocHeading[] {
   const headings: DocHeading[] = [];
   
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   visit(tree, 'heading', (node: any) => {
     const text = node.children
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       .filter((child: any) => child.type === 'text')
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       .map((child: any) => child.value)
       .join('');
     
@@ -30,9 +34,11 @@ function extractHeadings(tree: any): DocHeading[] {
   return headings;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function extractCodeBlocks(tree: any): CodeBlock[] {
   const codeBlocks: CodeBlock[] = [];
   
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   visit(tree, 'code', (node: any) => {
     if (node.value) {
       codeBlocks.push({
@@ -47,21 +53,39 @@ function extractCodeBlocks(tree: any): CodeBlock[] {
 }
 
 function getCategoryFromPath(filePath: string): DocMetadata['category'] {
-  if (filePath.includes('/01-app/') || filePath.includes('app-router')) {
+  // Normalize path separators for cross-platform compatibility
+  const normalizedPath = filePath.replace(/\\/g, '/');
+  
+  // Check for app router (01-app folder)
+  if (normalizedPath.includes('/01-app/') || normalizedPath.startsWith('01-app/')) {
     return 'app-router';
   }
-  if (filePath.includes('/02-pages/') || filePath.includes('pages-router')) {
+  
+  // Check for pages router (02-pages folder)
+  if (normalizedPath.includes('/02-pages/') || normalizedPath.startsWith('02-pages/')) {
     return 'pages-router';
   }
-  if (filePath.includes('api-reference')) {
-    return 'api-reference';
-  }
-  if (filePath.includes('architecture')) {
+  
+  // Check for architecture docs
+  if (normalizedPath.includes('/03-architecture/') || normalizedPath.startsWith('03-architecture/')) {
     return 'architecture';
   }
-  return 'community';
+  
+  // Check for community docs
+  if (normalizedPath.includes('/04-community/') || normalizedPath.startsWith('04-community/')) {
+    return 'community';
+  }
+  
+  // Check for API reference within app or pages
+  if (normalizedPath.includes('/api-reference/') || normalizedPath.includes('/03-api-reference/') || normalizedPath.includes('/04-api-reference/')) {
+    return 'api-reference';
+  }
+  
+  // Default fallback
+  return 'app-router';
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function extractTitle(frontMatter: any, content: string): string {
   if (frontMatter.title) return frontMatter.title;
   

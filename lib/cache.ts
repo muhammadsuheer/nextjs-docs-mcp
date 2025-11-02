@@ -39,7 +39,7 @@ export function initRedis(): Redis | null {
     }
     
     return null;
-  } catch (error) {
+  } catch {
     return null;
   }
 }
@@ -62,7 +62,7 @@ export async function getCached<T>(key: string): Promise<T | null> {
     }
     
     return cached.data;
-  } catch (error) {
+  } catch {
     return null;
   }
 }
@@ -85,7 +85,7 @@ export async function setCached<T>(
     };
     
     await redis.setex(key, ttl, JSON.stringify(entry));
-  } catch (error) {
+  } catch {
     return;
   }
 }
@@ -105,7 +105,7 @@ export async function clearCache(pattern?: string): Promise<void> {
     } else {
       await redis.flushdb();
     }
-  } catch (error) {
+  } catch {
     return;
   }
 }
@@ -113,10 +113,10 @@ export async function clearCache(pattern?: string): Promise<void> {
 /**
  * Generate cache key for search queries
  */
-export function generateSearchCacheKey(query: string, options: Record<string, any> = {}): string {
+export function generateSearchCacheKey(query: string, options: Record<string, unknown> = {}): string {
   const normalized = query.toLowerCase().trim();
   const optsStr = Object.entries(options)
-    .filter(([_, v]) => v !== undefined)
+    .filter(([, v]) => v !== undefined)
     .sort(([a], [b]) => a.localeCompare(b))
     .map(([k, v]) => `${k}:${v}`)
     .join('_');
