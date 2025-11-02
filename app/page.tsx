@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
 
 export default function Home() {
   const [setupTab, setSetupTab] = useState<'hosted' | 'local'>('hosted');
@@ -189,10 +188,10 @@ export default function Home() {
                   Step 2: Add Configuration for {ides[selectedIDE as keyof typeof ides].name}
                 </h3>
                 
-                {'path' in ides[selectedIDE as keyof typeof ides] && (ides[selectedIDE as keyof typeof ides] as any).path && (
+                {'path' in ides[selectedIDE as keyof typeof ides] && (ides[selectedIDE as keyof typeof ides] as Record<string, unknown>).path && (
                   <div className="mb-4">
                     <div className="text-sm text-gray-700 mb-2">Configuration file location:</div>
-                    {Object.entries((ides[selectedIDE as keyof typeof ides] as any).path as Record<string, string>).map(([os, path]) => (
+                    {Object.entries((ides[selectedIDE as keyof typeof ides] as Record<string, Record<string, string>>).path as Record<string, string>).map(([os, path]) => (
                       <div key={os} className="flex items-center justify-between bg-gray-50 border border-gray-200 rounded px-3 py-2 mb-2">
                         <div className="flex items-center gap-3">
                           <span className="text-xs font-medium text-gray-500 w-16">{os}</span>
@@ -212,13 +211,13 @@ export default function Home() {
                 <div className="relative">
                   <pre className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto text-sm">
                     <code>{(() => {
-                      const ide = ides[selectedIDE as keyof typeof ides] as any;
+                      const ide = ides[selectedIDE as keyof typeof ides] as Record<string, string>;
                       return ide.config.includes('{') ? ide.config : (ide.setup || ide.config);
                     })()}</code>
                   </pre>
                   <button
                     onClick={() => {
-                      const ide = ides[selectedIDE as keyof typeof ides] as any;
+                      const ide = ides[selectedIDE as keyof typeof ides] as Record<string, string>;
                       const text = ide.config.includes('{') ? ide.config : (ide.setup || ide.config);
                       copyToClipboard(text, 'config');
                     }}

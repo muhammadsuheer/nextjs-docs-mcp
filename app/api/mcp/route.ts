@@ -6,13 +6,13 @@ import fs from 'fs/promises';
 import path from 'path';
 import { getSearchEngine } from '@/lib/search-engine';
 import { getCached, setCached, generateSearchCacheKey, initRedis } from '@/lib/cache';
-import { DOCS_METADATA_PATH, MCP_SERVER_NAME, MCP_SERVER_VERSION } from '@/lib/constants';
+import { DOCS_METADATA_PATH } from '@/lib/constants';
 import { autoDetectDocVersion, detectNextVersion, getDocVersionForNextVersion } from '@/lib/version-detector';
 import type { DocMetadata, SearchOptions } from '@/types';
 
 // Initialize search engine with multi-version support
-let searchEngines: Map<string, ReturnType<typeof getSearchEngine>> = new Map();
-let versionsLoaded: Set<string> = new Set();
+const searchEngines: Map<string, ReturnType<typeof getSearchEngine>> = new Map();
+const versionsLoaded: Set<string> = new Set();
 
 async function ensureDocsLoaded(version?: string) {
   // Auto-detect version from user's package.json if not provided
@@ -52,7 +52,7 @@ async function ensureDocsLoaded(version?: string) {
     console.log(`✅ Loaded Next.js ${targetVersion} documentation (${docs.length} docs)`);
     
     return engine;
-  } catch (error) {
+  } catch {
     throw new Error(`Documentation not found for version ${targetVersion}. Please run: npm run process-docs && npm run build:index`);
   }
 }
@@ -386,13 +386,6 @@ const handler = createMcpHandler(
       }
     );
     
-  },
-  {
-    name: MCP_SERVER_NAME,
-    version: MCP_SERVER_VERSION,
-  },
-  {
-    basePath: '/api',
   }
 );
 
