@@ -8,16 +8,19 @@ let redis: Redis | null = null;
 
 /**
  * Initialize Redis connection
- * Supports multiple environment variable formats:
- * 1. KV_REST_API_URL + KV_REST_API_TOKEN (Vercel/Upstash - Primary)
- * 2. UPSTASH_REDIS_REST_URL + UPSTASH_REDIS_REST_TOKEN
- * 3. REDIS_URL (Standard format)
+ * Automatically uses Vercel's Upstash Redis integration
+ * Environment variables (set by Vercel):
+ * - KV_REST_API_URL
+ * - KV_REST_API_TOKEN
+ * - KV_REST_API_READ_ONLY_TOKEN
+ * - KV_URL
+ * - REDIS_URL
  */
 export function initRedis(): Redis | null {
   if (redis) return redis;
   
   try {
-    // Method 1: KV_* variables (Vercel/Upstash style) - Primary
+    // Vercel Upstash Integration (Primary)
     if (process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN) {
       redis = new Redis({
         url: process.env.KV_REST_API_URL,
@@ -26,7 +29,7 @@ export function initRedis(): Redis | null {
       return redis;
     }
     
-    // Method 2: UPSTASH_* variables
+    // Fallback: Try Redis.fromEnv() for manual configuration
     if (process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN) {
       redis = new Redis({
         url: process.env.UPSTASH_REDIS_REST_URL,
@@ -35,9 +38,7 @@ export function initRedis(): Redis | null {
       return redis;
     }
     
-    // Method 3: Try fromEnv() as fallback
-    redis = Redis.fromEnv();
-    return redis;
+    return null;
   } catch (error) {
     return null;
   }

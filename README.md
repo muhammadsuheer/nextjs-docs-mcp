@@ -110,31 +110,30 @@ vercel --prod   # Production deployment
 
 ---
 
-## ⚡ Optional: Redis Caching
+## ⚡ Redis Caching (Auto-configured on Vercel)
 
-Add Upstash Redis for **10x faster** repeated queries:
+Redis caching makes repeated queries **10x faster**:
 
-### 1. Create Database
-- Go to [Upstash Console](https://console.upstash.com)
-- Create new Redis database
-- Copy credentials
+### On Vercel (Automatic)
+1. Go to your project on Vercel
+2. Navigate to **Storage** tab
+3. Click **Connect Store** → **Create New** → **KV Database**
+4. Done! All environment variables auto-configured
 
-### 2. Add Environment Variables
+### Local Development
 ```bash
+# Copy from Vercel: Settings → Environment Variables
+# Or get from: https://console.upstash.com
+
 # .env.local
 KV_REST_API_URL=https://your-redis.upstash.io
 KV_REST_API_TOKEN=your_token
 ```
 
-### 3. For Vercel Deployment
-```bash
-vercel env add KV_REST_API_URL
-vercel env add KV_REST_API_TOKEN
-```
-
 **Performance with Redis:**
 - Search: 95ms → **45ms** (2x faster)
 - Cache hit rate: **80%** for common queries
+- Works perfectly without Redis too!
 
 ---
 
