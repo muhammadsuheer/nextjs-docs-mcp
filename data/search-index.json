@@ -1,0 +1,2994 @@
+[
+  {
+    "id": "01-app-01-getting-started-01-installation",
+    "title": "Installation",
+    "description": "Learn how to create a new Next.js application with the `create-next-app` CLI, and set up TypeScript, ESLint, and Module Path Aliases.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\01-getting-started\\01-installation.mdx"
+  },
+  {
+    "id": "01-app-01-getting-started-02-project-structure",
+    "title": "Project structure and organization",
+    "description": "Learn the folder and file conventions in Next.js, and how to organize your project.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\01-getting-started\\02-project-structure.mdx"
+  },
+  {
+    "id": "01-app-01-getting-started-03-layouts-and-pages",
+    "title": "Layouts and Pages",
+    "description": "Learn how to create your first pages and layouts, and link between them with the Link component.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\01-getting-started\\03-layouts-and-pages.mdx"
+  },
+  {
+    "id": "01-app-01-getting-started-04-linking-and-navigating",
+    "title": "Linking and Navigating",
+    "description": "Learn how the built-in navigation optimizations work, including prefetching, prerendering, and client-side navigation, and how to optimize navigation for dynamic routes and slow networks.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\01-getting-started\\04-linking-and-navigating.mdx"
+  },
+  {
+    "id": "01-app-01-getting-started-05-server-and-client-components",
+    "title": "Server and Client Components",
+    "description": "Learn how you can use React Server and Client Components to render parts of your application on the server or the client.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\01-getting-started\\05-server-and-client-components.mdx"
+  },
+  {
+    "id": "01-app-01-getting-started-06-cache-components",
+    "title": "Cache Components",
+    "description": "Learn how to use Cache Components and combine the benefits of static and dynamic rendering.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\01-getting-started\\06-cache-components.mdx"
+  },
+  {
+    "id": "01-app-01-getting-started-07-fetching-data",
+    "title": "Fetching Data",
+    "description": "Learn how to fetch data and stream content that depends on data.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\01-getting-started\\07-fetching-data.mdx"
+  },
+  {
+    "id": "01-app-01-getting-started-08-updating-data",
+    "title": "Updating Data",
+    "description": "Learn how to mutate data using Server Functions.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\01-getting-started\\08-updating-data.mdx"
+  },
+  {
+    "id": "01-app-01-getting-started-09-caching-and-revalidating",
+    "title": "Caching and Revalidating",
+    "description": "Learn how to cache and revalidate data in your application.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\01-getting-started\\09-caching-and-revalidating.mdx"
+  },
+  {
+    "id": "01-app-01-getting-started-10-error-handling",
+    "title": "Error Handling",
+    "description": "Learn how to display expected errors and handle uncaught exceptions.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\01-getting-started\\10-error-handling.mdx"
+  },
+  {
+    "id": "01-app-01-getting-started-11-css",
+    "title": "CSS",
+    "description": "Learn about the different ways to add CSS to your application, including Tailwind CSS, CSS Modules, Global CSS, and more.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\01-getting-started\\11-css.mdx"
+  },
+  {
+    "id": "01-app-01-getting-started-12-images",
+    "title": "Image Optimization",
+    "description": "Learn how to optimize images in Next.js",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\01-getting-started\\12-images.mdx"
+  },
+  {
+    "id": "01-app-01-getting-started-13-fonts",
+    "title": "Font Optimization",
+    "description": "Learn how to optimize fonts in Next.js",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\01-getting-started\\13-fonts.mdx"
+  },
+  {
+    "id": "01-app-01-getting-started-14-metadata-and-og-images",
+    "title": "Metadata and OG images",
+    "description": "Learn how to add metadata to your pages and create dynamic OG images.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\01-getting-started\\14-metadata-and-og-images.mdx"
+  },
+  {
+    "id": "01-app-01-getting-started-15-route-handlers",
+    "title": "Route Handlers",
+    "description": "Learn how to use Route Handlers",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\01-getting-started\\15-route-handlers.mdx"
+  },
+  {
+    "id": "01-app-01-getting-started-16-proxy",
+    "title": "Proxy",
+    "description": "Learn how to use Proxy",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\01-getting-started\\16-proxy.mdx"
+  },
+  {
+    "id": "01-app-01-getting-started-17-deploying",
+    "title": "Deploying",
+    "description": "Learn how to deploy your Next.js application.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\01-getting-started\\17-deploying.mdx"
+  },
+  {
+    "id": "01-app-01-getting-started-18-upgrading",
+    "title": "Upgrading",
+    "description": "Learn how to upgrade your Next.js application to the latest version or canary.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\01-getting-started\\18-upgrading.mdx"
+  },
+  {
+    "id": "01-app-01-getting-started-index",
+    "title": "Getting Started",
+    "description": "Learn how to create full-stack web applications with the Next.js App Router.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\01-getting-started\\index.mdx"
+  },
+  {
+    "id": "01-app-02-guides-analytics",
+    "title": "How to add analytics to your Next.js application",
+    "description": "Measure and track page performance using Next.js Speed Insights",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\analytics.mdx"
+  },
+  {
+    "id": "01-app-02-guides-authentication",
+    "title": "How to implement authentication in Next.js",
+    "description": "Learn how to implement authentication in your Next.js application.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\authentication.mdx"
+  },
+  {
+    "id": "01-app-02-guides-backend-for-frontend",
+    "title": "How to use Next.js as a backend for your frontend",
+    "description": "Learn how to use Next.js as a backend framework",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\backend-for-frontend.mdx"
+  },
+  {
+    "id": "01-app-02-guides-caching",
+    "title": "Caching in Next.js",
+    "description": "An overview of caching mechanisms in Next.js.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\caching.mdx"
+  },
+  {
+    "id": "01-app-02-guides-ci-build-caching",
+    "title": "How to configure Continuous Integration (CI) build caching",
+    "description": "Learn how to configure CI to cache Next.js builds",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\ci-build-caching.mdx"
+  },
+  {
+    "id": "01-app-02-guides-content-security-policy",
+    "title": "How to set a Content Security Policy (CSP) for your Next.js application",
+    "description": "Learn how to set a Content Security Policy (CSP) for your Next.js application.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\content-security-policy.mdx"
+  },
+  {
+    "id": "01-app-02-guides-css-in-js",
+    "title": "How to use CSS-in-JS libraries",
+    "description": "Use CSS-in-JS libraries with Next.js",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\css-in-js.mdx"
+  },
+  {
+    "id": "01-app-02-guides-custom-server",
+    "title": "How to set up a custom server in Next.js",
+    "description": "Start a Next.js app programmatically using a custom server.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\custom-server.mdx"
+  },
+  {
+    "id": "01-app-02-guides-data-security",
+    "title": "How to think about data security in Next.js",
+    "description": "Learn the built-in data security features in Next.js and learn best practices for protecting your application's data.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\data-security.mdx"
+  },
+  {
+    "id": "01-app-02-guides-debugging",
+    "title": "How to use debugging tools with Next.js",
+    "description": "Learn how to debug your Next.js application with VS Code, Chrome DevTools, or Firefox DevTools.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\debugging.mdx"
+  },
+  {
+    "id": "01-app-02-guides-draft-mode",
+    "title": "How to preview content with Draft Mode in Next.js",
+    "description": "Next.js has draft mode to toggle between static and dynamic pages. You can learn how it works with App Router here.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\draft-mode.mdx"
+  },
+  {
+    "id": "01-app-02-guides-environment-variables",
+    "title": "How to use environment variables in Next.js",
+    "description": "Learn to add and access environment variables in your Next.js application.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\environment-variables.mdx"
+  },
+  {
+    "id": "01-app-02-guides-forms",
+    "title": "How to create forms with Server Actions",
+    "description": "Learn how to create forms in Next.js with React Server Actions.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\forms.mdx"
+  },
+  {
+    "id": "01-app-02-guides-incremental-static-regeneration",
+    "title": "How to implement Incremental Static Regeneration (ISR)",
+    "description": "Learn how to create or update static pages at runtime with Incremental Static Regeneration.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\incremental-static-regeneration.mdx"
+  },
+  {
+    "id": "01-app-02-guides-index",
+    "title": "Guides",
+    "description": "Learn how to implement common patterns and real-world use cases using Next.js",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\index.mdx"
+  },
+  {
+    "id": "01-app-02-guides-instrumentation",
+    "title": "How to set up instrumentation",
+    "description": "Learn how to use instrumentation to run code at server startup in your Next.js app",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\instrumentation.mdx"
+  },
+  {
+    "id": "01-app-02-guides-internationalization",
+    "title": "Internationalization",
+    "description": "Add support for multiple languages with internationalized routing and localized content.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\internationalization.mdx"
+  },
+  {
+    "id": "01-app-02-guides-json-ld",
+    "title": "How to implement JSON-LD in your Next.js application",
+    "description": "Learn how to add JSON-LD to your Next.js application to describe your content to search engines and AI.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\json-ld.mdx"
+  },
+  {
+    "id": "01-app-02-guides-lazy-loading",
+    "title": "How to lazy load Client Components and libraries",
+    "description": "Lazy load imported libraries and React Components to improve your application's loading performance.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\lazy-loading.mdx"
+  },
+  {
+    "id": "01-app-02-guides-local-development",
+    "title": "How to optimize your local development environment",
+    "description": "Learn how to optimize your local development environment with Next.js.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\local-development.mdx"
+  },
+  {
+    "id": "01-app-02-guides-mcp",
+    "title": "Enabling Next.js MCP Server for Coding Agents",
+    "description": "Learn how to use Next.js MCP support to allow coding agents access to your application state",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\mcp.mdx"
+  },
+  {
+    "id": "01-app-02-guides-mdx",
+    "title": "How to use markdown and MDX in Next.js",
+    "description": "Learn how to configure MDX and use it in your Next.js apps.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\mdx.mdx"
+  },
+  {
+    "id": "01-app-02-guides-memory-usage",
+    "title": "How to optimize memory usage",
+    "description": "Optimize memory used by your application in development and production.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\memory-usage.mdx"
+  },
+  {
+    "id": "01-app-02-guides-migrating-app-router-migration",
+    "title": "How to migrate from Pages to the App Router",
+    "description": "Learn how to upgrade your existing Next.js application from the Pages Router to the App Router.",
+    "content": "",
+    "category": "app-router",
+    "path": "01-app\\02-guides\\migrating\\app-router-migration.mdx"
+  },
+  {
+    "id": "01-app-02-guides-migrating-from-create-react-app",
+    "title": "How to migrate from Create React App to Next.js",
+    "description": "Learn how to migrate your existing React application from Create React App to Next.js.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\migrating\\from-create-react-app.mdx"
+  },
+  {
+    "id": "01-app-02-guides-migrating-from-vite",
+    "title": "How to migrate from Vite to Next.js",
+    "description": "Learn how to migrate your existing React application from Vite to Next.js.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\migrating\\from-vite.mdx"
+  },
+  {
+    "id": "01-app-02-guides-migrating-index",
+    "title": "Migrating",
+    "description": "Learn how to migrate from popular frameworks to Next.js",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\migrating\\index.mdx"
+  },
+  {
+    "id": "01-app-02-guides-multi-tenant",
+    "title": "How to build multi-tenant apps in Next.js",
+    "description": "Learn how to build multi-tenant apps with the App Router.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\multi-tenant.mdx"
+  },
+  {
+    "id": "01-app-02-guides-multi-zones",
+    "title": "How to build micro-frontends using multi-zones and Next.js",
+    "description": "Learn how to build micro-frontends using Next.js Multi-Zones to deploy multiple Next.js apps under a single domain.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\multi-zones.mdx"
+  },
+  {
+    "id": "01-app-02-guides-open-telemetry",
+    "title": "How to set up instrumentation with OpenTelemetry",
+    "description": "Learn how to instrument your Next.js app with OpenTelemetry.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\open-telemetry.mdx"
+  },
+  {
+    "id": "01-app-02-guides-package-bundling",
+    "title": "How to optimize package bundling",
+    "description": "Learn how to optimize your application's server and client bundles.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\package-bundling.mdx"
+  },
+  {
+    "id": "01-app-02-guides-prefetching",
+    "title": "Prefetching",
+    "description": "Learn how to configure prefetching in Next.js",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\prefetching.mdx"
+  },
+  {
+    "id": "01-app-02-guides-production-checklist",
+    "title": "How to optimize your Next.js application for production",
+    "description": "Recommendations to ensure the best performance and user experience before taking your Next.js application to production.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\production-checklist.mdx"
+  },
+  {
+    "id": "01-app-02-guides-progressive-web-apps",
+    "title": "How to build a Progressive Web Application (PWA) with Next.js",
+    "description": "Learn how to build a Progressive Web Application (PWA) with Next.js.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\progressive-web-apps.mdx"
+  },
+  {
+    "id": "01-app-02-guides-redirecting",
+    "title": "How to handle redirects in Next.js",
+    "description": "Learn the different ways to handle redirects in Next.js.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\redirecting.mdx"
+  },
+  {
+    "id": "01-app-02-guides-sass",
+    "title": "How to use Sass",
+    "description": "Style your Next.js application using Sass.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\sass.mdx"
+  },
+  {
+    "id": "01-app-02-guides-scripts",
+    "title": "How to load and optimize scripts",
+    "description": "Optimize 3rd party scripts with the built-in Script component.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\scripts.mdx"
+  },
+  {
+    "id": "01-app-02-guides-self-hosting",
+    "title": "How to self-host your Next.js application",
+    "description": "Learn how to self-host your Next.js application on a Node.js server, Docker image, or static HTML files (static exports).",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\self-hosting.mdx"
+  },
+  {
+    "id": "01-app-02-guides-single-page-applications",
+    "title": "How to build single-page applications with Next.js",
+    "description": "Next.js fully supports building Single-Page Applications (SPAs).",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\single-page-applications.mdx"
+  },
+  {
+    "id": "01-app-02-guides-static-exports",
+    "title": "How to create a static export of your Next.js application",
+    "description": "Next.js enables starting as a static site or Single-Page Application (SPA), then later optionally upgrading to use features that require a server.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\static-exports.mdx"
+  },
+  {
+    "id": "01-app-02-guides-tailwind-v3-css",
+    "title": "How to install Tailwind CSS v3 in your Next.js application",
+    "description": "Style your Next.js Application using Tailwind CSS v3 for broader browser support.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\tailwind-v3-css.mdx"
+  },
+  {
+    "id": "01-app-02-guides-testing-cypress",
+    "title": "How to set up Cypress with Next.js",
+    "description": "Learn how to set up Cypress with Next.js for End-to-End (E2E) and Component Testing.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\testing\\cypress.mdx"
+  },
+  {
+    "id": "01-app-02-guides-testing-index",
+    "title": "Testing",
+    "description": "Learn how to set up Next.js with four commonly used testing tools — Cypress, Playwright, Vitest, and Jest.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\testing\\index.mdx"
+  },
+  {
+    "id": "01-app-02-guides-testing-jest",
+    "title": "How to set up Jest with Next.js",
+    "description": "Learn how to set up Jest with Next.js for Unit Testing and Snapshot Testing.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\testing\\jest.mdx"
+  },
+  {
+    "id": "01-app-02-guides-testing-playwright",
+    "title": "How to set up Playwright with Next.js",
+    "description": "Learn how to set up Playwright with Next.js for End-to-End (E2E) Testing.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\testing\\playwright.mdx"
+  },
+  {
+    "id": "01-app-02-guides-testing-vitest",
+    "title": "How to set up Vitest with Next.js",
+    "description": "Learn how to set up Vitest with Next.js for Unit Testing.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\testing\\vitest.mdx"
+  },
+  {
+    "id": "01-app-02-guides-third-party-libraries",
+    "title": "How to optimize third-party libraries",
+    "description": "Optimize the performance of third-party libraries in your application with the `@next/third-parties` package.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\third-party-libraries.mdx"
+  },
+  {
+    "id": "01-app-02-guides-upgrading-codemods",
+    "title": "Codemods",
+    "description": "Use codemods to upgrade your Next.js codebase when new features are released.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\upgrading\\codemods.mdx"
+  },
+  {
+    "id": "01-app-02-guides-upgrading-index",
+    "title": "Upgrade Guides",
+    "description": "Learn how to upgrade to the latest versions of Next.js.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\upgrading\\index.mdx"
+  },
+  {
+    "id": "01-app-02-guides-upgrading-version-14",
+    "title": "How to upgrade to version 14",
+    "description": "Upgrade your Next.js Application from Version 13 to 14.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\upgrading\\version-14.mdx"
+  },
+  {
+    "id": "01-app-02-guides-upgrading-version-15",
+    "title": "How to upgrade to version 15",
+    "description": "Upgrade your Next.js Application from Version 14 to 15.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\upgrading\\version-15.mdx"
+  },
+  {
+    "id": "01-app-02-guides-upgrading-version-16",
+    "title": "How to upgrade to version 16",
+    "description": "Upgrade your Next.js Application from Version 15 to 16.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\upgrading\\version-16.mdx"
+  },
+  {
+    "id": "01-app-02-guides-videos",
+    "title": "How to use and optimize videos",
+    "description": "Recommendations and best practices for optimizing videos in your Next.js application.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\02-guides\\videos.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-01-directives-index",
+    "title": "Directives",
+    "description": "Directives are used to modify the behavior of your Next.js application.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\01-directives\\index.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-01-directives-use-cache-private",
+    "title": "use cache: private",
+    "description": "Learn how to use the `\"use cache: private\"` directive to enable runtime prefetching of personalized content in your Next.js application.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\01-directives\\use-cache-private.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-01-directives-use-cache-remote",
+    "title": "use cache: remote",
+    "description": "Learn how to use the `\"use cache: remote\"` directive to enable caching in dynamic contexts in your Next.js application.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\01-directives\\use-cache-remote.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-01-directives-use-cache",
+    "title": "use cache",
+    "description": "Learn how to use the use cache directive to cache data in your Next.js application.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\01-directives\\use-cache.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-01-directives-use-client",
+    "title": "use client",
+    "description": "Learn how to use the use client directive to render a component on the client.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\01-directives\\use-client.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-01-directives-use-server",
+    "title": "use server",
+    "description": "Learn how to use the use server directive to execute code on the server.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\01-directives\\use-server.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-02-components-font",
+    "title": "Font Module",
+    "description": "Optimizing loading web fonts with the built-in `next/font` loaders.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\02-components\\font.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-02-components-form",
+    "title": "Form Component",
+    "description": "Learn how to use the `<Form>` component to handle form submissions and search params updates with client-side navigation.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\02-components\\form.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-02-components-image",
+    "title": "Image Component",
+    "description": "Optimize Images in your Next.js Application using the built-in `next/image` Component.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\02-components\\image.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-02-components-index",
+    "title": "Components",
+    "description": "API Reference for Next.js built-in components.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\02-components\\index.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-02-components-link",
+    "title": "Link Component",
+    "description": "Enable fast client-side navigation with the built-in `next/link` component.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\02-components\\link.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-02-components-script",
+    "title": "Script Component",
+    "description": "Optimize third-party scripts in your Next.js application using the built-in `next/script` Component.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\02-components\\script.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-01-metadata-app-icons",
+    "title": "favicon, icon, and apple-icon",
+    "description": "API Reference for the Favicon, Icon and Apple Icon file conventions.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\01-metadata\\app-icons.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-01-metadata-index",
+    "title": "Metadata Files API Reference",
+    "description": "API documentation for the metadata file conventions.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\01-metadata\\index.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-01-metadata-manifest",
+    "title": "manifest.json",
+    "description": "API Reference for manifest.json file.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\01-metadata\\manifest.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-01-metadata-opengraph-image",
+    "title": "opengraph-image and twitter-image",
+    "description": "API Reference for the Open Graph Image and Twitter Image file conventions.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\01-metadata\\opengraph-image.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-01-metadata-robots",
+    "title": "robots.txt",
+    "description": "API Reference for robots.txt file.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\01-metadata\\robots.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-01-metadata-sitemap",
+    "title": "sitemap.xml",
+    "description": "API Reference for the sitemap.xml file.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\01-metadata\\sitemap.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-default",
+    "title": "default.js",
+    "description": "API Reference for the default.js file.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\default.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-dynamic-routes",
+    "title": "Dynamic Route Segments",
+    "description": "Dynamic Route Segments can be used to programmatically generate route segments from dynamic data.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\dynamic-routes.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-error",
+    "title": "error.js",
+    "description": "API reference for the error.js special file.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\error.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-forbidden",
+    "title": "forbidden.js",
+    "description": "API reference for the forbidden.js special file.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\forbidden.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-index",
+    "title": "File-system conventions",
+    "description": "API Reference for Next.js file-system conventions.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\index.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-instrumentation-client",
+    "title": "instrumentation-client.js",
+    "description": "Learn how to add client-side instrumentation to track and monitor your Next.js application's frontend performance.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\instrumentation-client.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-instrumentation",
+    "title": "instrumentation.js",
+    "description": "API reference for the instrumentation.js file.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\instrumentation.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-intercepting-routes",
+    "title": "Intercepting Routes",
+    "description": "Use intercepting routes to load a new route within the current layout while masking the browser URL, useful for advanced routing patterns such as modals.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\intercepting-routes.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-layout",
+    "title": "layout.js",
+    "description": "API reference for the layout.js file.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\layout.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-loading",
+    "title": "loading.js",
+    "description": "API reference for the loading.js file.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\loading.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-mdx-components",
+    "title": "mdx-components.js",
+    "description": "API reference for the mdx-components.js file.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\mdx-components.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-not-found",
+    "title": "not-found.js",
+    "description": "API reference for the not-found.js file.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\not-found.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-page",
+    "title": "page.js",
+    "description": "API reference for the page.js file.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\page.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-parallel-routes",
+    "title": "Parallel Routes",
+    "description": "Simultaneously render one or more pages in the same view that can be navigated independently. A pattern for highly dynamic applications.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\parallel-routes.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-proxy",
+    "title": "proxy.js",
+    "description": "API reference for the proxy.js file.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\proxy.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-public-folder",
+    "title": "public Folder",
+    "description": "Next.js allows you to serve static files, like images, in the public directory. You can learn how it works here.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\public-folder.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-route-groups",
+    "title": "Route Groups",
+    "description": "Route Groups can be used to partition your Next.js application into different sections.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\route-groups.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-route-segment-config",
+    "title": "Route Segment Config",
+    "description": "Learn about how to configure options for Next.js route segments.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\route-segment-config.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-route",
+    "title": "route.js",
+    "description": "API reference for the route.js special file.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\route.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-src-folder",
+    "title": "src Folder",
+    "description": "Save pages under the `src` folder as an alternative to the root `pages` directory.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\src-folder.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-template",
+    "title": "template.js",
+    "description": "API Reference for the template.js file.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\template.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-03-file-conventions-unauthorized",
+    "title": "unauthorized.js",
+    "description": "API reference for the unauthorized.js special file.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\03-file-conventions\\unauthorized.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-after",
+    "title": "after",
+    "description": "API Reference for the after function.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\after.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-cacheLife",
+    "title": "cacheLife",
+    "description": "Learn how to use the cacheLife function to set the cache expiration time for a cached function or component.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\cacheLife.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-cacheTag",
+    "title": "cacheTag",
+    "description": "Learn how to use the cacheTag function to manage cache invalidation in your Next.js application.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\cacheTag.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-connection",
+    "title": "connection",
+    "description": "API Reference for the connection function.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\connection.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-cookies",
+    "title": "cookies",
+    "description": "API Reference for the cookies function.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\cookies.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-draft-mode",
+    "title": "draftMode",
+    "description": "API Reference for the draftMode function.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\draft-mode.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-fetch",
+    "title": "fetch",
+    "description": "API reference for the extended fetch function.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\fetch.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-forbidden",
+    "title": "forbidden",
+    "description": "API Reference for the forbidden function.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\forbidden.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-generate-image-metadata",
+    "title": "generateImageMetadata",
+    "description": "Learn how to generate multiple images in a single Metadata API special file.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\generate-image-metadata.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-generate-metadata",
+    "title": "generateMetadata",
+    "description": "Learn how to add Metadata to your Next.js application for improved search engine optimization (SEO) and web shareability.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\generate-metadata.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-generate-sitemaps",
+    "title": "generateSitemaps",
+    "description": "Learn how to use the generateSiteMaps function to create multiple sitemaps for your application.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\generate-sitemaps.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-generate-static-params",
+    "title": "generateStaticParams",
+    "description": "API reference for the generateStaticParams function.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\generate-static-params.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-generate-viewport",
+    "title": "generateViewport",
+    "description": "API Reference for the generateViewport function.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\generate-viewport.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-headers",
+    "title": "headers",
+    "description": "API reference for the headers function.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\headers.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-image-response",
+    "title": "ImageResponse",
+    "description": "API Reference for the ImageResponse constructor.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\image-response.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-index",
+    "title": "Functions",
+    "description": "API Reference for Next.js Functions and Hooks.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\index.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-next-request",
+    "title": "NextRequest",
+    "description": "API Reference for NextRequest.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\next-request.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-next-response",
+    "title": "NextResponse",
+    "description": "API Reference for NextResponse.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\next-response.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-not-found",
+    "title": "notFound",
+    "description": "API Reference for the notFound function.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\not-found.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-permanentRedirect",
+    "title": "permanentRedirect",
+    "description": "API Reference for the permanentRedirect function.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\permanentRedirect.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-redirect",
+    "title": "redirect",
+    "description": "API Reference for the redirect function.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\redirect.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-refresh",
+    "title": "refresh",
+    "description": "API Reference for the refresh function.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\refresh.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-revalidatePath",
+    "title": "revalidatePath",
+    "description": "API Reference for the revalidatePath function.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\revalidatePath.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-revalidateTag",
+    "title": "revalidateTag",
+    "description": "API Reference for the revalidateTag function.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\revalidateTag.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-unauthorized",
+    "title": "unauthorized",
+    "description": "API Reference for the unauthorized function.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\unauthorized.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-unstable_cache",
+    "title": "unstable_cache",
+    "description": "API Reference for the unstable_cache function.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\unstable_cache.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-unstable_noStore",
+    "title": "unstable_noStore",
+    "description": "API Reference for the unstable_noStore function.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\unstable_noStore.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-unstable_rethrow",
+    "title": "unstable_rethrow",
+    "description": "API Reference for the unstable_rethrow function.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\unstable_rethrow.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-updateTag",
+    "title": "updateTag",
+    "description": "API Reference for the updateTag function.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\updateTag.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-use-link-status",
+    "title": "useLinkStatus",
+    "description": "API Reference for the useLinkStatus hook.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\use-link-status.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-use-params",
+    "title": "useParams",
+    "description": "API Reference for the useParams hook.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\use-params.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-use-pathname",
+    "title": "usePathname",
+    "description": "API Reference for the usePathname hook.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\use-pathname.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-use-report-web-vitals",
+    "title": "useReportWebVitals",
+    "description": "API Reference for the useReportWebVitals function.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\use-report-web-vitals.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-use-router",
+    "title": "useRouter",
+    "description": "API reference for the useRouter hook.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\use-router.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-use-search-params",
+    "title": "useSearchParams",
+    "description": "API Reference for the useSearchParams hook.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\use-search-params.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-use-selected-layout-segment",
+    "title": "useSelectedLayoutSegment",
+    "description": "API Reference for the useSelectedLayoutSegment hook.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\use-selected-layout-segment.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-use-selected-layout-segments",
+    "title": "useSelectedLayoutSegments",
+    "description": "API Reference for the useSelectedLayoutSegments hook.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\use-selected-layout-segments.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-04-functions-userAgent",
+    "title": "userAgent",
+    "description": "The userAgent helper extends the Web Request API with additional properties and methods to interact with the user agent object from the request.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\04-functions\\userAgent.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-adapterPath",
+    "title": "experimental.adapterPath",
+    "description": "Configure a custom adapter for Next.js to hook into the build process with modifyConfig and onBuildComplete callbacks.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\adapterPath.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-allowedDevOrigins",
+    "title": "allowedDevOrigins",
+    "description": "Use `allowedDevOrigins` to configure additional origins that can request the dev server.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\allowedDevOrigins.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-appDir",
+    "title": "appDir",
+    "description": "Enable the App Router to use layouts, streaming, and more.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\appDir.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-assetPrefix",
+    "title": "assetPrefix",
+    "description": "Learn how to use the assetPrefix config option to configure your CDN.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\assetPrefix.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-authInterrupts",
+    "title": "authInterrupts",
+    "description": "Learn how to enable the experimental `authInterrupts` configuration option to use `forbidden` and `unauthorized`.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\authInterrupts.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-basePath",
+    "title": "basePath",
+    "description": "Use `basePath` to deploy a Next.js application under a sub-path of a domain.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\basePath.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-browserDebugInfoInTerminal",
+    "title": "browserDebugInfoInTerminal",
+    "description": "Forward browser console logs and errors to your terminal during development.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\browserDebugInfoInTerminal.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-cacheComponents",
+    "title": "cacheComponents",
+    "description": "Learn how to enable the cacheComponents flag in Next.js.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\cacheComponents.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-cacheLife",
+    "title": "cacheLife",
+    "description": "Learn how to set up cacheLife configurations in Next.js.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\cacheLife.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-compress",
+    "title": "compress",
+    "description": "Next.js provides gzip compression to compress rendered content and static files, it only works with the server target. Learn more about it here.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\compress.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-crossOrigin",
+    "title": "crossOrigin",
+    "description": "Use the `crossOrigin` option to add a crossOrigin tag on the `script` tags generated by `next/script`.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\crossOrigin.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-cssChunking",
+    "title": "cssChunking",
+    "description": "Use the `cssChunking` option to control how CSS files are chunked in your Next.js application.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\cssChunking.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-devIndicators",
+    "title": "devIndicators",
+    "description": "Configuration options for the on-screen indicator that gives context about the current route you're viewing during development.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\devIndicators.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-distDir",
+    "title": "distDir",
+    "description": "Set a custom build directory to use instead of the default .next directory.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\distDir.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-env",
+    "title": "env",
+    "description": "Learn to add and access environment variables in your Next.js application at build time.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\env.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-expireTime",
+    "title": "expireTime",
+    "description": "Customize stale-while-revalidate expire time for ISR enabled pages.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\expireTime.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-exportPathMap",
+    "title": "exportPathMap",
+    "description": "Customize the pages that will be exported as HTML files when using `next export`.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\exportPathMap.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-generateBuildId",
+    "title": "generateBuildId",
+    "description": "Configure the build id, which is used to identify the current build in which your application is being served.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\generateBuildId.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-generateEtags",
+    "title": "generateEtags",
+    "description": "Next.js will generate etags for every page by default. Learn more about how to disable etag generation here.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\generateEtags.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-headers",
+    "title": "headers",
+    "description": "Add custom HTTP headers to your Next.js app.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\headers.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-htmlLimitedBots",
+    "title": "htmlLimitedBots",
+    "description": "Specify a list of user agents that should receive blocking metadata.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\htmlLimitedBots.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-httpAgentOptions",
+    "title": "httpAgentOptions",
+    "description": "Next.js will automatically use HTTP Keep-Alive by default. Learn more about how to disable HTTP Keep-Alive here.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\httpAgentOptions.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-images",
+    "title": "images",
+    "description": "Custom configuration for the next/image loader",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\images.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-incrementalCacheHandlerPath",
+    "title": "Custom Next.js Cache Handler",
+    "description": "Configure the Next.js cache used for storing and revalidating data to use any external service like Redis, Memcached, or others.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\incrementalCacheHandlerPath.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-index",
+    "title": "next.config.js",
+    "description": "Learn how to configure your application with next.config.js.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\index.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-inlineCss",
+    "title": "inlineCss",
+    "description": "Enable inline CSS support.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\inlineCss.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-isolatedDevBuild",
+    "title": "isolatedDevBuild",
+    "description": "Use isolated build outputs for development server to prevent conflicts with production builds.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\isolatedDevBuild.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-logging",
+    "title": "logging",
+    "description": "Configure how data fetches are logged to the console when running Next.js in development mode.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\logging.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-mdxRs",
+    "title": "mdxRs",
+    "description": "Use the new Rust compiler to compile MDX files in the App Router.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\mdxRs.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-onDemandEntries",
+    "title": "onDemandEntries",
+    "description": "Configure how Next.js will dispose and keep in memory pages created in development.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\onDemandEntries.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-optimizePackageImports",
+    "title": "optimizePackageImports",
+    "description": "API Reference for optimizePackageImports Next.js Config Option",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\optimizePackageImports.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-output",
+    "title": "output",
+    "description": "Next.js automatically traces which files are needed by each page to allow for easy deployment of your application. Learn how it works here.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\output.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-pageExtensions",
+    "title": "pageExtensions",
+    "description": "Extend the default page extensions used by Next.js when resolving pages in the Pages Router.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\pageExtensions.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-poweredByHeader",
+    "title": "poweredByHeader",
+    "description": "Next.js will add the `x-powered-by` header by default. Learn to opt-out of it here.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\poweredByHeader.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-productionBrowserSourceMaps",
+    "title": "productionBrowserSourceMaps",
+    "description": "Enables browser source map generation during the production build.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\productionBrowserSourceMaps.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-proxyClientMaxBodySize",
+    "title": "proxyClientMaxBodySize",
+    "description": "Configure the maximum request body size when using proxy.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\proxyClientMaxBodySize.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-reactCompiler",
+    "title": "reactCompiler",
+    "description": "Enable the React Compiler to automatically optimize component rendering.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\reactCompiler.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-reactMaxHeadersLength",
+    "title": "reactMaxHeadersLength",
+    "description": "The maximum length of the headers that are emitted by React and added to the response.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\reactMaxHeadersLength.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-reactStrictMode",
+    "title": "reactStrictMode",
+    "description": "The complete Next.js runtime is now Strict Mode-compliant, learn how to opt-in",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\reactStrictMode.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-redirects",
+    "title": "redirects",
+    "description": "Add redirects to your Next.js app.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\redirects.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-rewrites",
+    "title": "rewrites",
+    "description": "Add rewrites to your Next.js app.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\rewrites.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-sassOptions",
+    "title": "sassOptions",
+    "description": "Configure Sass options.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\sassOptions.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-serverActions",
+    "title": "serverActions",
+    "description": "Configure Server Actions behavior in your Next.js application.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\serverActions.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-serverComponentsHmrCache",
+    "title": "serverComponentsHmrCache",
+    "description": "Configure whether fetch responses in Server Components are cached across HMR refresh requests.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\serverComponentsHmrCache.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-serverExternalPackages",
+    "title": "serverExternalPackages",
+    "description": "Opt-out specific dependencies from the Server Components bundling and use native Node.js `require`.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\serverExternalPackages.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-staleTimes",
+    "title": "staleTimes",
+    "description": "Learn how to override the invalidation time of the Client Router Cache.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\staleTimes.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-staticGeneration",
+    "title": "staticGeneration*",
+    "description": "Learn how to configure static generation in your Next.js application.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\staticGeneration.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-taint",
+    "title": "taint",
+    "description": "Enable tainting Objects and Values.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\taint.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-trailingSlash",
+    "title": "trailingSlash",
+    "description": "Configure Next.js pages to resolve with or without a trailing slash.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\trailingSlash.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-transpilePackages",
+    "title": "transpilePackages",
+    "description": "Automatically transpile and bundle dependencies from local packages (like monorepos) or from external dependencies (`node_modules`).",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\transpilePackages.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-turbopack",
+    "title": "turbopack",
+    "description": "Configure Next.js with Turbopack-specific options",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\turbopack.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-turbopackFileSystemCache",
+    "title": "Turbopack FileSystem Caching",
+    "description": "Learn how to enable FileSystem Caching for Turbopack builds",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\turbopackFileSystemCache.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-typedRoutes",
+    "title": "typedRoutes",
+    "description": "Enable support for statically typed links.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\typedRoutes.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-typescript",
+    "title": "typescript",
+    "description": "Next.js reports TypeScript errors by default. Learn to opt-out of this behavior here.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\typescript.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-urlImports",
+    "title": "urlImports",
+    "description": "Configure Next.js to allow importing modules from external URLs.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\urlImports.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-useLightningcss",
+    "title": "useLightningcss",
+    "description": "Enable experimental support for Lightning CSS.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\useLightningcss.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-viewTransition",
+    "title": "viewTransition",
+    "description": "Enable ViewTransition API from React in App Router",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\viewTransition.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-webpack",
+    "title": "Custom Webpack Config",
+    "description": "Learn how to customize the webpack config used by Next.js",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\webpack.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-01-next-config-js-webVitalsAttribution",
+    "title": "webVitalsAttribution",
+    "description": "Learn how to use the webVitalsAttribution option to pinpoint the source of Web Vitals issues.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\01-next-config-js\\webVitalsAttribution.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-02-typescript",
+    "title": "TypeScript",
+    "description": "Next.js provides a TypeScript-first development experience for building your React application.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\02-typescript.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-03-eslint",
+    "title": "ESLint Plugin",
+    "description": "Learn how to use and configure the ESLint plugin to catch common issues and problems in a Next.js application.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\03-eslint.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-05-config-index",
+    "title": "Configuration",
+    "description": "Learn how to configure Next.js applications.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\05-config\\index.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-06-cli-create-next-app",
+    "title": "create-next-app",
+    "description": "Create Next.js apps using one command with the create-next-app CLI.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\06-cli\\create-next-app.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-06-cli-index",
+    "title": "CLI",
+    "description": "API Reference for the Next.js Command Line Interface (CLI) tools.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\06-cli\\index.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-06-cli-next",
+    "title": "next CLI",
+    "description": "Learn how to run and build your application with the Next.js CLI.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\06-cli\\next.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-07-edge",
+    "title": "Edge Runtime",
+    "description": "API Reference for the Edge Runtime.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\07-edge.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-08-turbopack",
+    "title": "Turbopack",
+    "description": "Turbopack is an incremental bundler optimized for JavaScript and TypeScript, written in Rust, and built into Next.js.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\08-turbopack.mdx"
+  },
+  {
+    "id": "01-app-03-api-reference-index",
+    "title": "API Reference",
+    "description": "Next.js API Reference for the App Router.",
+    "content": "",
+    "category": "api-reference",
+    "path": "01-app\\03-api-reference\\index.mdx"
+  },
+  {
+    "id": "01-app-index",
+    "title": "App Router",
+    "description": "The App Router is a file-system based router that uses React's latest features such as Server Components, Suspense, Server Functions, and more.",
+    "content": "",
+    "category": "community",
+    "path": "01-app\\index.mdx"
+  },
+  {
+    "id": "02-pages-01-getting-started-01-installation",
+    "title": "Create a new Next.js application",
+    "description": "How to create a new Next.js application with `create-next-app`. Set up TypeScript, ESLint,and configure your `next.config.js` file.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\01-getting-started\\01-installation.mdx"
+  },
+  {
+    "id": "02-pages-01-getting-started-02-project-structure",
+    "title": "Project Structure and Organization",
+    "description": "Learn about the folder and file conventions in a Next.js project, and how to organize your project.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\01-getting-started\\02-project-structure.mdx"
+  },
+  {
+    "id": "02-pages-01-getting-started-04-images",
+    "title": "Image Optimization",
+    "description": "Optimize your images with the built-in `next/image` component.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\01-getting-started\\04-images.mdx"
+  },
+  {
+    "id": "02-pages-01-getting-started-05-fonts",
+    "title": "How to use fonts",
+    "description": "Learn how to use fonts in Next.js",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\01-getting-started\\05-fonts.mdx"
+  },
+  {
+    "id": "02-pages-01-getting-started-06-css",
+    "title": "How to use CSS in your application",
+    "description": "Learn about the different ways to add CSS to your application, including CSS Modules, Global CSS, Tailwind CSS, and more.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\01-getting-started\\06-css.mdx"
+  },
+  {
+    "id": "02-pages-01-getting-started-11-deploying",
+    "title": "How to deploy your Next.js application",
+    "description": "Learn how to deploy your Next.js application.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\01-getting-started\\11-deploying.mdx"
+  },
+  {
+    "id": "02-pages-01-getting-started-index",
+    "title": "Getting Started - Pages Router",
+    "description": "Learn how to create full-stack web applications with Next.js with the Pages Router.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\01-getting-started\\index.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-analytics",
+    "title": "How to set up analytics",
+    "description": "Measure and track page performance using Next.js",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\analytics.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-authentication",
+    "title": "How to implement authentication in Next.js",
+    "description": "Learn how to implement authentication in Next.js, covering best practices, securing routes, authorization techniques, and session management.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\authentication.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-babel",
+    "title": "How to configure Babel in Next.js",
+    "description": "Extend the babel preset added by Next.js with your own configs.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\babel.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-ci-build-caching",
+    "title": "How to configure Continuous Integration (CI) build caching",
+    "description": "Learn how to configure CI to cache Next.js builds",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\ci-build-caching.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-content-security-policy",
+    "title": "How to set a Content Security Policy (CSP) for your Next.js application",
+    "description": "Learn how to set a Content Security Policy (CSP) for your Next.js application.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\content-security-policy.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-css-in-js",
+    "title": "How to use CSS-in-JS libraries",
+    "description": "Use CSS-in-JS libraries with Next.js",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\css-in-js.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-custom-server",
+    "title": "How to set up a custom server in Next.js",
+    "description": "Start a Next.js app programmatically using a custom server.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\custom-server.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-debugging",
+    "title": "How to use debugging tools with Next.js",
+    "description": "Learn how to debug your Next.js application with VS Code or Chrome DevTools.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\debugging.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-draft-mode",
+    "title": "How to preview content with Draft Mode in Next.js",
+    "description": "Next.js has draft mode to toggle between static and dynamic pages. You can learn how it works with Pages Router.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\draft-mode.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-environment-variables",
+    "title": "How to use environment variables in Next.js",
+    "description": "Learn to add and access environment variables in your Next.js application.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\environment-variables.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-forms",
+    "title": "How to create forms with API Routes",
+    "description": "Learn how to handle form submissions and data mutations with Next.js.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\forms.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-incremental-static-regeneration",
+    "title": "How to implement Incremental Static Regeneration (ISR)",
+    "description": "Learn how to create or update static pages at runtime with Incremental Static Regeneration.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\incremental-static-regeneration.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-index",
+    "title": "Guides",
+    "description": "Learn how to implement common UI patterns and use cases using Next.js",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\index.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-instrumentation",
+    "title": "How to set up instrumentation",
+    "description": "Learn how to use instrumentation to run code at server startup in your Next.js app",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\instrumentation.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-internationalization",
+    "title": "How to implement internationalization in Next.js",
+    "description": "Next.js has built-in support for internationalized routing and language detection. Learn more here.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\internationalization.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-lazy-loading",
+    "title": "How to lazy load Client Components and libraries",
+    "description": "Lazy load imported libraries and React Components to improve your application's overall loading performance.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\lazy-loading.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-mdx",
+    "title": "How to use markdown and MDX in Next.js",
+    "description": "Learn how to configure MDX to write JSX in your markdown files.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\mdx.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-migrating-app-router-migration",
+    "title": "How to migrate from Pages to the App Router",
+    "description": "Learn how to upgrade your existing Next.js application from the Pages Router to the App Router.",
+    "content": "",
+    "category": "app-router",
+    "path": "02-pages\\02-guides\\migrating\\app-router-migration.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-migrating-from-create-react-app",
+    "title": "How to migrate from Create React App to Next.js",
+    "description": "Learn how to migrate your existing React application from Create React App to Next.js.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\migrating\\from-create-react-app.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-migrating-from-vite",
+    "title": "How to migrate from Vite to Next.js",
+    "description": "Learn how to migrate your existing React application from Vite to Next.js.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\migrating\\from-vite.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-migrating-index",
+    "title": "Migrating",
+    "description": "Learn how to migrate from popular frameworks to Next.js",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\migrating\\index.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-multi-zones",
+    "title": "How to build micro-frontends using multi-zones and Next.js",
+    "description": "Learn how to build micro-frontends using Next.js Multi-Zones to deploy multiple Next.js apps under a single domain.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\multi-zones.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-open-telemetry",
+    "title": "How to instrument your Next.js app with OpenTelemetry",
+    "description": "Learn how to instrument your Next.js app with OpenTelemetry.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\open-telemetry.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-package-bundling",
+    "title": "How to optimize package bundling",
+    "description": "Learn how to optimize your application's server and client bundles.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\package-bundling.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-post-css",
+    "title": "How to configure PostCSS in Next.js",
+    "description": "Extend the PostCSS config and plugins added by Next.js with your own.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\post-css.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-preview-mode",
+    "title": "How to preview content with Preview Mode in Next.js",
+    "description": "Next.js has the preview mode for statically generated pages. You can learn how it works here.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\preview-mode.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-production-checklist",
+    "title": "How to optimize your Next.js application for production",
+    "description": "Recommendations to ensure the best performance and user experience before taking your Next.js application to production.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\production-checklist.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-redirecting",
+    "title": "How to handle redirects in Next.js",
+    "description": "Learn the different ways to handle redirects in Next.js.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\redirecting.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-sass",
+    "title": "How to use Sass in Next.js",
+    "description": "Learn how to use Sass in your Next.js application.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\sass.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-scripts",
+    "title": "How to load and optimize scripts",
+    "description": "Optimize 3rd party scripts with the built-in Script component.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\scripts.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-self-hosting",
+    "title": "How to self-host your Next.js application",
+    "description": "Learn how to self-host your Next.js application on a Node.js server, Docker image, or static HTML files (static exports).",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\self-hosting.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-static-exports",
+    "title": "How to create a static export of your Next.js application",
+    "description": "Next.js enables starting as a static site or Single-Page Application (SPA), then later optionally upgrading to use features that require a server.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\static-exports.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-tailwind-v3-css",
+    "title": "Tailwind CSS",
+    "description": "Style your Next.js Application using Tailwind CSS.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\tailwind-v3-css.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-testing-cypress",
+    "title": "How to set up Cypress with Next.js",
+    "description": "Learn how to set up Next.js with Cypress for End-to-End (E2E) and Component Testing.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\testing\\cypress.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-testing-index",
+    "title": "Testing",
+    "description": "Learn how to set up Next.js with three commonly used testing tools — Cypress, Playwright, Vitest, and Jest.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\testing\\index.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-testing-jest",
+    "title": "How to set up Jest with Next.js",
+    "description": "Learn how to set up Next.js with Jest for Unit Testing.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\testing\\jest.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-testing-playwright",
+    "title": "How to set up Playwright with Next.js",
+    "description": "Learn how to set up Next.js with Playwright for End-to-End (E2E) and Integration testing.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\testing\\playwright.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-testing-vitest",
+    "title": "How to set up Vitest with Next.js",
+    "description": "Learn how to set up Next.js with Vitest and React Testing Library - two popular unit testing libraries.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\testing\\vitest.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-third-party-libraries",
+    "title": "How to optimize third-party libraries",
+    "description": "Optimize the performance of third-party libraries in your application with the `@next/third-parties` package.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\third-party-libraries.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-upgrading-codemods",
+    "title": "Codemods",
+    "description": "Use codemods to upgrade your Next.js codebase when new features are released.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\upgrading\\codemods.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-upgrading-index",
+    "title": "Upgrading",
+    "description": "Learn how to upgrade to the latest versions of Next.js.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\upgrading\\index.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-upgrading-version-10",
+    "title": "How to upgrade to version 10",
+    "description": "Upgrade your Next.js Application from Version 9 to Version 10.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\upgrading\\version-10.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-upgrading-version-11",
+    "title": "How to upgrade to version 11",
+    "description": "Upgrade your Next.js Application from Version 10 to Version 11.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\upgrading\\version-11.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-upgrading-version-12",
+    "title": "How to upgrade to version 12",
+    "description": "Upgrade your Next.js Application from Version 11 to Version 12.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\upgrading\\version-12.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-upgrading-version-13",
+    "title": "How to upgrade to version 13",
+    "description": "Upgrade your Next.js Application from Version 12 to 13.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\upgrading\\version-13.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-upgrading-version-14",
+    "title": "How to upgrade to version 14",
+    "description": "Upgrade your Next.js Application from Version 13 to 14.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\upgrading\\version-14.mdx"
+  },
+  {
+    "id": "02-pages-02-guides-upgrading-version-9",
+    "title": "How to upgrade to version 9",
+    "description": "Upgrade your Next.js Application from Version 8 to Version 9.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\02-guides\\upgrading\\version-9.mdx"
+  },
+  {
+    "id": "02-pages-03-building-your-application-01-routing-01-pages-and-layouts",
+    "title": "Pages and Layouts",
+    "description": "Create your first page and shared layout with the Pages Router.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\03-building-your-application\\01-routing\\01-pages-and-layouts.mdx"
+  },
+  {
+    "id": "02-pages-03-building-your-application-01-routing-02-dynamic-routes",
+    "title": "Dynamic Routes",
+    "description": "Dynamic Routes are pages that allow you to add custom params to your URLs. Start creating Dynamic Routes and learn more here.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\03-building-your-application\\01-routing\\02-dynamic-routes.mdx"
+  },
+  {
+    "id": "02-pages-03-building-your-application-01-routing-03-linking-and-navigating",
+    "title": "Linking and Navigating",
+    "description": "Learn how navigation works in Next.js, and how to use the Link Component and `useRouter` hook.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\03-building-your-application\\01-routing\\03-linking-and-navigating.mdx"
+  },
+  {
+    "id": "02-pages-03-building-your-application-01-routing-05-custom-app",
+    "title": "Custom App",
+    "description": "Control page initialization and add a layout that persists for all pages by overriding the default App component used by Next.js.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\03-building-your-application\\01-routing\\05-custom-app.mdx"
+  },
+  {
+    "id": "02-pages-03-building-your-application-01-routing-06-custom-document",
+    "title": "Custom Document",
+    "description": "Extend the default document markup added by Next.js.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\03-building-your-application\\01-routing\\06-custom-document.mdx"
+  },
+  {
+    "id": "02-pages-03-building-your-application-01-routing-07-api-routes",
+    "title": "API Routes",
+    "description": "Next.js supports API Routes, which allow you to build your API without leaving your Next.js app. Learn how it works here.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\03-building-your-application\\01-routing\\07-api-routes.mdx"
+  },
+  {
+    "id": "02-pages-03-building-your-application-01-routing-08-custom-error",
+    "title": "Custom Errors",
+    "description": "Override and extend the built-in Error page to handle custom errors.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\03-building-your-application\\01-routing\\08-custom-error.mdx"
+  },
+  {
+    "id": "02-pages-03-building-your-application-01-routing-index",
+    "title": "Routing",
+    "description": "Learn the fundamentals of routing for front-end applications with the Pages Router.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\03-building-your-application\\01-routing\\index.mdx"
+  },
+  {
+    "id": "02-pages-03-building-your-application-02-rendering-01-server-side-rendering",
+    "title": "Server-side Rendering (SSR)",
+    "description": "Use Server-side Rendering to render pages on each request.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\03-building-your-application\\02-rendering\\01-server-side-rendering.mdx"
+  },
+  {
+    "id": "02-pages-03-building-your-application-02-rendering-02-static-site-generation",
+    "title": "Static Site Generation (SSG)",
+    "description": "Use Static Site Generation (SSG) to pre-render pages at build time.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\03-building-your-application\\02-rendering\\02-static-site-generation.mdx"
+  },
+  {
+    "id": "02-pages-03-building-your-application-02-rendering-04-automatic-static-optimization",
+    "title": "Automatic Static Optimization",
+    "description": "Next.js automatically optimizes your app to be static HTML whenever possible. Learn how it works here.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\03-building-your-application\\02-rendering\\04-automatic-static-optimization.mdx"
+  },
+  {
+    "id": "02-pages-03-building-your-application-02-rendering-05-client-side-rendering",
+    "title": "Client-side Rendering (CSR)",
+    "description": "Learn how to implement client-side rendering in the Pages Router.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\03-building-your-application\\02-rendering\\05-client-side-rendering.mdx"
+  },
+  {
+    "id": "02-pages-03-building-your-application-02-rendering-index",
+    "title": "Rendering",
+    "description": "Learn the fundamentals of rendering in React and Next.js.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\03-building-your-application\\02-rendering\\index.mdx"
+  },
+  {
+    "id": "02-pages-03-building-your-application-03-data-fetching-01-get-static-props",
+    "title": "getStaticProps",
+    "description": "Fetch data and generate static pages with `getStaticProps`. Learn more about this API for data fetching in Next.js.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\03-building-your-application\\03-data-fetching\\01-get-static-props.mdx"
+  },
+  {
+    "id": "02-pages-03-building-your-application-03-data-fetching-02-get-static-paths",
+    "title": "getStaticPaths",
+    "description": "Fetch data and generate static pages with `getStaticPaths`. Learn more about this API for data fetching in Next.js.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\03-building-your-application\\03-data-fetching\\02-get-static-paths.mdx"
+  },
+  {
+    "id": "02-pages-03-building-your-application-03-data-fetching-03-forms-and-mutations",
+    "title": "Forms and Mutations",
+    "description": "Learn how to handle form submissions and data mutations with Next.js.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\03-building-your-application\\03-data-fetching\\03-forms-and-mutations.mdx"
+  },
+  {
+    "id": "02-pages-03-building-your-application-03-data-fetching-03-get-server-side-props",
+    "title": "getServerSideProps",
+    "description": "Fetch data on each request with `getServerSideProps`.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\03-building-your-application\\03-data-fetching\\03-get-server-side-props.mdx"
+  },
+  {
+    "id": "02-pages-03-building-your-application-03-data-fetching-05-client-side",
+    "title": "Client-side Fetching",
+    "description": "Learn about client-side data fetching, and how to use SWR, a data fetching React Hook library that handles caching, revalidation, focus tracking, refetching on interval and more.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\03-building-your-application\\03-data-fetching\\05-client-side.mdx"
+  },
+  {
+    "id": "02-pages-03-building-your-application-03-data-fetching-index",
+    "title": "Data Fetching",
+    "description": "Next.js allows you to fetch data in multiple ways, with pre-rendering, server-side rendering or static-site generation, and incremental static regeneration. Learn how to manage your application data in Next.js.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\03-building-your-application\\03-data-fetching\\index.mdx"
+  },
+  {
+    "id": "02-pages-03-building-your-application-06-configuring-12-error-handling",
+    "title": "Error Handling",
+    "description": "Handle errors in your Next.js app.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\03-building-your-application\\06-configuring\\12-error-handling.mdx"
+  },
+  {
+    "id": "02-pages-03-building-your-application-06-configuring-index",
+    "title": "Configuring",
+    "description": "Learn how to configure your Next.js application.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\03-building-your-application\\06-configuring\\index.mdx"
+  },
+  {
+    "id": "02-pages-03-building-your-application-index",
+    "title": "Building Your Application",
+    "description": "Learn how to use Next.js features to build your application.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\03-building-your-application\\index.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-01-components-font",
+    "title": "Font Module",
+    "description": "API Reference for the Font Module",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\01-components\\font.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-01-components-form",
+    "title": "Form",
+    "description": "Learn how to use the `<Form>` component to handle form submissions and search params updates with client-side navigation.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\01-components\\form.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-01-components-head",
+    "title": "Head",
+    "description": "Add custom elements to the `head` of your page with the built-in Head component.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\01-components\\head.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-01-components-image-legacy",
+    "title": "Image (Legacy)",
+    "description": "Backwards compatible Image Optimization with the Legacy Image component.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\01-components\\image-legacy.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-01-components-image",
+    "title": "Image",
+    "description": "Optimize Images in your Next.js Application using the built-in `next/image` Component.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\01-components\\image.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-01-components-index",
+    "title": "Components",
+    "description": "API Reference for Next.js built-in components in the Pages Router.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\01-components\\index.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-01-components-link",
+    "title": "Link",
+    "description": "API reference for the `<Link>` component.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\01-components\\link.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-01-components-script",
+    "title": "Script",
+    "description": "Optimize third-party scripts in your Next.js application using the built-in `next/script` Component.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\01-components\\script.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-02-file-conventions-index",
+    "title": "File-system conventions",
+    "description": "API Reference for Next.js file-system conventions.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\02-file-conventions\\index.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-02-file-conventions-instrumentation",
+    "title": "instrumentation.js",
+    "description": "API reference for the instrumentation.js file.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\02-file-conventions\\instrumentation.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-02-file-conventions-proxy",
+    "title": "Proxy",
+    "description": "Learn how to use Proxy to run code before a request is completed.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\02-file-conventions\\proxy.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-02-file-conventions-public-folder",
+    "title": "public Folder",
+    "description": "Next.js allows you to serve static files, like images, in the public directory. You can learn how it works here.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\02-file-conventions\\public-folder.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-02-file-conventions-src-folder",
+    "title": "src Directory",
+    "description": "Save pages under the `src` folder as an alternative to the root `pages` directory.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\02-file-conventions\\src-folder.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-03-functions-get-initial-props",
+    "title": "getInitialProps",
+    "description": "Fetch dynamic data on the server for your React component with getInitialProps.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\03-functions\\get-initial-props.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-03-functions-get-server-side-props",
+    "title": "getServerSideProps",
+    "description": "API reference for `getServerSideProps`. Learn how to fetch data on each request with Next.js.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\03-functions\\get-server-side-props.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-03-functions-get-static-paths",
+    "title": "getStaticPaths",
+    "description": "API reference for `getStaticPaths`. Learn how to fetch data and generate static pages with `getStaticPaths`.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\03-functions\\get-static-paths.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-03-functions-get-static-props",
+    "title": "getStaticProps",
+    "description": "API reference for `getStaticProps`. Learn how to use `getStaticProps` to generate static pages with Next.js.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\03-functions\\get-static-props.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-03-functions-index",
+    "title": "Functions",
+    "description": "API Reference for Functions and Hooks in Pages Router.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\03-functions\\index.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-03-functions-next-request",
+    "title": "NextRequest",
+    "description": "API Reference for NextRequest.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\03-functions\\next-request.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-03-functions-next-response",
+    "title": "NextResponse",
+    "description": "API Reference for NextResponse.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\03-functions\\next-response.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-03-functions-use-report-web-vitals",
+    "title": "useReportWebVitals",
+    "description": "useReportWebVitals",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\03-functions\\use-report-web-vitals.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-03-functions-use-router",
+    "title": "useRouter",
+    "description": "Learn more about the API of the Next.js Router, and access the router instance in your page with the useRouter hook.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\03-functions\\use-router.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-03-functions-userAgent",
+    "title": "userAgent",
+    "description": "The userAgent helper extends the Web Request API with additional properties and methods to interact with the user agent object from the request.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\03-functions\\userAgent.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-adapterPath",
+    "title": "experimental.adapterPath",
+    "description": "Configure a custom adapter for Next.js to hook into the build process with modifyConfig and buildComplete callbacks.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\adapterPath.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-allowedDevOrigins",
+    "title": "allowedDevOrigins",
+    "description": "Use `allowedDevOrigins` to configure additional origins that can request the dev server.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\allowedDevOrigins.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-assetPrefix",
+    "title": "assetPrefix",
+    "description": "Learn how to use the assetPrefix config option to configure your CDN.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\assetPrefix.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-basePath",
+    "title": "basePath",
+    "description": "Use `basePath` to deploy a Next.js application under a sub-path of a domain.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\basePath.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-bundlePagesRouterDependencies",
+    "title": "bundlePagesRouterDependencies",
+    "description": "Enable automatic dependency bundling for Pages Router",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\bundlePagesRouterDependencies.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-compress",
+    "title": "compress",
+    "description": "Next.js provides gzip compression to compress rendered content and static files, it only works with the server target. Learn more about it here.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\compress.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-crossOrigin",
+    "title": "crossOrigin",
+    "description": "Use the `crossOrigin` option to add a crossOrigin tag on the `script` tags generated by `next/script` and `next/head`.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\crossOrigin.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-devIndicators",
+    "title": "devIndicators",
+    "description": "Optimized pages include an indicator to let you know if it's being statically optimized. You can opt-out of it here.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\devIndicators.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-distDir",
+    "title": "distDir",
+    "description": "Set a custom build directory to use instead of the default .next directory.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\distDir.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-env",
+    "title": "env",
+    "description": "Learn to add and access environment variables in your Next.js application at build time.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\env.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-exportPathMap",
+    "title": "exportPathMap",
+    "description": "Customize the pages that will be exported as HTML files when using `next export`.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\exportPathMap.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-generateBuildId",
+    "title": "generateBuildId",
+    "description": "Configure the build id, which is used to identify the current build in which your application is being served.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\generateBuildId.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-generateEtags",
+    "title": "generateEtags",
+    "description": "Next.js will generate etags for every page by default. Learn more about how to disable etag generation here.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\generateEtags.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-headers",
+    "title": "headers",
+    "description": "Add custom HTTP headers to your Next.js app.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\headers.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-httpAgentOptions",
+    "title": "httpAgentOptions",
+    "description": "Next.js will automatically use HTTP Keep-Alive by default. Learn more about how to disable HTTP Keep-Alive here.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\httpAgentOptions.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-images",
+    "title": "images",
+    "description": "Custom configuration for the next/image loader",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\images.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-index",
+    "title": "next.config.js Options",
+    "description": "Learn about the options available in next.config.js for the Pages Router.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\index.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-isolatedDevBuild",
+    "title": "isolatedDevBuild",
+    "description": "Use isolated directories for development builds to prevent conflicts with production builds.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\isolatedDevBuild.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-onDemandEntries",
+    "title": "onDemandEntries",
+    "description": "Configure how Next.js will dispose and keep in memory pages created in development.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\onDemandEntries.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-optimizePackageImports",
+    "title": "optimizePackageImports",
+    "description": "API Reference for optimizePackageImports Next.js Config Option",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\optimizePackageImports.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-output",
+    "title": "output",
+    "description": "Next.js automatically traces which files are needed by each page to allow for easy deployment of your application. Learn how it works here.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\output.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-pageExtensions",
+    "title": "pageExtensions",
+    "description": "Extend the default page extensions used by Next.js when resolving pages in the Pages Router.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\pageExtensions.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-poweredByHeader",
+    "title": "poweredByHeader",
+    "description": "Next.js will add the `x-powered-by` header by default. Learn to opt-out of it here.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\poweredByHeader.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-productionBrowserSourceMaps",
+    "title": "productionBrowserSourceMaps",
+    "description": "Enables browser source map generation during the production build.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\productionBrowserSourceMaps.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-proxyClientMaxBodySize",
+    "title": "experimental.proxyClientMaxBodySize",
+    "description": "Configure the maximum request body size when using proxy.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\proxyClientMaxBodySize.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-reactStrictMode",
+    "title": "reactStrictMode",
+    "description": "The complete Next.js runtime is now Strict Mode-compliant, learn how to opt-in",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\reactStrictMode.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-redirects",
+    "title": "redirects",
+    "description": "Add redirects to your Next.js app.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\redirects.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-rewrites",
+    "title": "rewrites",
+    "description": "Add rewrites to your Next.js app.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\rewrites.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-serverExternalPackages",
+    "title": "serverExternalPackages",
+    "description": "Opt-out specific dependencies from the dependency bundling enabled by `bundlePagesRouterDependencies`.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\serverExternalPackages.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-trailingSlash",
+    "title": "trailingSlash",
+    "description": "Configure Next.js pages to resolve with or without a trailing slash.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\trailingSlash.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-transpilePackages",
+    "title": "transpilePackages",
+    "description": "Automatically transpile and bundle dependencies from local packages (like monorepos) or from external dependencies (`node_modules`).",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\transpilePackages.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-turbopack",
+    "title": "turbopack",
+    "description": "Configure Next.js with Turbopack-specific options",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\turbopack.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-typescript",
+    "title": "typescript",
+    "description": "Next.js reports TypeScript errors by default. Learn to opt-out of this behavior here.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\typescript.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-urlImports",
+    "title": "urlImports",
+    "description": "Configure Next.js to allow importing modules from external URLs.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\urlImports.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-useLightningcss",
+    "title": "useLightningcss",
+    "description": "Enable experimental support for Lightning CSS.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\useLightningcss.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-webpack",
+    "title": "Custom Webpack Config",
+    "description": "Learn how to customize the webpack config used by Next.js",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\webpack.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-next-config-js-webVitalsAttribution",
+    "title": "webVitalsAttribution",
+    "description": "Learn how to use the webVitalsAttribution option to pinpoint the source of Web Vitals issues.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-next-config-js\\webVitalsAttribution.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-01-typescript",
+    "title": "TypeScript",
+    "description": "Next.js provides a TypeScript-first development experience for building your React application.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\01-typescript.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-02-eslint",
+    "title": "ESLint",
+    "description": "Next.js reports ESLint errors and warnings during builds by default. Learn how to opt-out of this behavior here.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\02-eslint.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-04-config-index",
+    "title": "Configuration",
+    "description": "Learn how to configure your Next.js application.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\04-config\\index.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-05-cli-create-next-app",
+    "title": "create-next-app CLI",
+    "description": "Create Next.js apps using one command with the create-next-app CLI.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\05-cli\\create-next-app.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-05-cli-index",
+    "title": "CLI",
+    "description": "API Reference for the Next.js Command Line Interface (CLI) tools.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\05-cli\\index.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-05-cli-next",
+    "title": "next CLI",
+    "description": "Learn how to run and build your application with the Next.js CLI.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\05-cli\\next.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-06-edge",
+    "title": "Edge Runtime",
+    "description": "API Reference for the Edge Runtime.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\06-edge.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-08-turbopack",
+    "title": "Turbopack",
+    "description": "Turbopack is an incremental bundler optimized for JavaScript and TypeScript, written in Rust, and built into Next.js.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\08-turbopack.mdx"
+  },
+  {
+    "id": "02-pages-04-api-reference-index",
+    "title": "API Reference",
+    "description": "Next.js API Reference for the Pages Router.",
+    "content": "",
+    "category": "api-reference",
+    "path": "02-pages\\04-api-reference\\index.mdx"
+  },
+  {
+    "id": "02-pages-index",
+    "title": "Pages Router",
+    "description": "Before Next.js 13, the Pages Router was the main way to create routes in Next.js with an intuitive file-system router.",
+    "content": "",
+    "category": "community",
+    "path": "02-pages\\index.mdx"
+  },
+  {
+    "id": "03-architecture-accessibility",
+    "title": "Accessibility",
+    "description": "The built-in accessibility features of Next.js.",
+    "content": "",
+    "category": "architecture",
+    "path": "03-architecture\\accessibility.mdx"
+  },
+  {
+    "id": "03-architecture-fast-refresh",
+    "title": "Fast Refresh",
+    "description": "Fast Refresh is a hot module reloading experience that gives you instantaneous feedback on edits made to your React components.",
+    "content": "",
+    "category": "architecture",
+    "path": "03-architecture\\fast-refresh.mdx"
+  },
+  {
+    "id": "03-architecture-index",
+    "title": "Architecture",
+    "description": "How Next.js Works",
+    "content": "",
+    "category": "architecture",
+    "path": "03-architecture\\index.mdx"
+  },
+  {
+    "id": "03-architecture-nextjs-compiler",
+    "title": "Next.js Compiler",
+    "description": "Next.js Compiler, written in Rust, which transforms and minifies your Next.js application.",
+    "content": "",
+    "category": "architecture",
+    "path": "03-architecture\\nextjs-compiler.mdx"
+  },
+  {
+    "id": "03-architecture-supported-browsers",
+    "title": "Supported Browsers",
+    "description": "Browser support and which JavaScript features are supported by Next.js.",
+    "content": "",
+    "category": "architecture",
+    "path": "03-architecture\\supported-browsers.mdx"
+  },
+  {
+    "id": "04-community-01-contribution-guide",
+    "title": "Docs Contribution Guide",
+    "description": "Learn how to contribute to Next.js Documentation",
+    "content": "",
+    "category": "community",
+    "path": "04-community\\01-contribution-guide.mdx"
+  },
+  {
+    "id": "04-community-02-rspack",
+    "title": "Rspack Integration",
+    "description": "Use the `next-rspack` plugin to bundle your Next.js with Rspack.",
+    "content": "",
+    "category": "community",
+    "path": "04-community\\02-rspack.mdx"
+  },
+  {
+    "id": "04-community-index",
+    "title": "Next.js Community",
+    "description": "Get involved in the Next.js community.",
+    "content": "",
+    "category": "community",
+    "path": "04-community\\index.mdx"
+  },
+  {
+    "id": "index",
+    "title": "Next.js Docs",
+    "description": "Welcome to the Next.js Documentation.",
+    "content": "",
+    "category": "community",
+    "path": "index.mdx"
+  }
+]

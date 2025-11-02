@@ -35,8 +35,8 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Documentation (downloaded during build)
-docs-data/
+# Documentation source (keep for now)
+# docs-data/
 
-# Generated data
-data/
+# Generated data (keep for reliable deployment)
+# data/
