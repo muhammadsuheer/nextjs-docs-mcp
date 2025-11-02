@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "bash scripts/build-docs.sh && tsx scripts/process-docs-all.ts && next build",
+    "build": "next build",
+    "build:with-docs": "bash scripts/build-docs.sh && tsx scripts/process-docs-all.ts && next build",
     "start": "next start",
     "lint": "eslint",
-    "setup:local": "npm run build"
+    "setup:local": "npm run build:with-docs"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.20.2",
