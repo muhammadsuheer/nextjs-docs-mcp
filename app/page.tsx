@@ -22,7 +22,7 @@ export default function Home() {
       config: `{
   "mcpServers": {
     "nextjs-docs": {
-      "url": "${serverUrl}/api/sse"
+      "url": "${serverUrl}/api/mcp"
     }
   }
 }`,
@@ -34,18 +34,18 @@ export default function Home() {
     cursor: {
       name: 'Cursor',
       config: 'Settings → Features → MCP Servers → Add Server',
-      setup: `Server URL: ${serverUrl}/api/sse`
+      setup: `Server URL: ${serverUrl}/api/mcp`
     },
     windsurf: {
       name: 'Windsurf',
       config: 'Settings → Integrations → MCP',
-      setup: `Endpoint: ${serverUrl}/api/sse`
+      setup: `Endpoint: ${serverUrl}/api/mcp`
     },
     zed: {
       name: 'Zed',
       config: `{
   "context_servers": {
-    "nextjs-docs": "${serverUrl}/api/sse"
+    "nextjs-docs": "${serverUrl}/api/mcp"
   }
 }`,
       path: {
@@ -55,7 +55,7 @@ export default function Home() {
     vscode: {
       name: 'VS Code + Cline',
       config: 'Cline extension settings',
-      setup: `MCP Server URL: ${serverUrl}/api/sse`
+      setup: `MCP Server URL: ${serverUrl}/api/mcp`
     }
   };
 
@@ -94,7 +94,7 @@ export default function Home() {
             Next.js Documentation<br />Model Context Protocol Server
           </h1>
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-            Search complete Next.js documentation directly in Claude Desktop, Cursor, Windsurf, Zed, and VS Code. 374 pages, 2,716 code examples, offline-capable, sub-50ms search.
+            Search complete Next.js 15/16 documentation directly in Claude Desktop, Cursor, Windsurf, Zed, and VS Code. 374 pages, 2,716 code examples, offline-capable, sub-50ms search.
           </p>
           <div className="flex flex-wrap gap-3">
             <a href="#quickstart" className="px-5 py-2.5 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition text-sm font-medium">
@@ -342,7 +342,7 @@ npm run dev`, 'install')}
               <div className="bg-gray-50 rounded p-3 text-sm space-y-1 font-mono">
                 <div className="text-gray-600">Parameters:</div>
                 <div className="text-gray-900">• query: string (required)</div>
-                <div className="text-gray-900">• version?: "13" | "14" | "15" | "latest"</div>
+                <div className="text-gray-900">• version?: "13" | "14" | "15" | "16" | "latest"</div>
                 <div className="text-gray-900">• category?: "app-router" | "pages-router" | "api-reference"</div>
                 <div className="text-gray-900">• limit?: number (1-50, default: 10)</div>
                 <div className="text-gray-900">• includeCodeExamples?: boolean</div>
@@ -385,7 +385,7 @@ npm run dev`, 'install')}
               },
               {
                 title: 'Get Complete Page',
-                query: '"Show me the complete documentation for data fetching in App Router"',
+                query: '"Show me the complete documentation for Cache Components in Next.js 16"',
                 result: 'Returns full content including all sections, code examples, and related links'
               },
               {
@@ -415,31 +415,17 @@ npm run dev`, 'install')}
               <div className="space-y-3">
                 <div className="border border-gray-200 rounded-lg p-4">
                   <div className="flex items-center justify-between mb-2">
-                    <code className="font-mono text-sm text-gray-900">/api/sse</code>
-                    <span className="px-2 py-0.5 bg-green-50 text-green-700 text-xs font-medium rounded border border-green-200">Recommended</span>
+                    <code className="font-mono text-sm text-gray-900">/api/mcp</code>
+                    <span className="px-2 py-0.5 bg-green-50 text-green-700 text-xs font-medium rounded border border-green-200">Vercel Standard</span>
                   </div>
-                  <p className="text-sm text-gray-600 mb-3">Server-Sent Events transport for MCP protocol</p>
+                  <p className="text-sm text-gray-600 mb-3">MCP protocol endpoint (supports GET, POST, DELETE)</p>
                   <div className="flex items-center justify-between bg-gray-50 border border-gray-200 rounded px-3 py-2">
-                    <code className="text-xs text-gray-700">{serverUrl}/api/sse</code>
+                    <code className="text-xs text-gray-700">{serverUrl}/api/mcp</code>
                     <button
-                      onClick={() => copyToClipboard(`${serverUrl}/api/sse`, 'sse-api')}
+                      onClick={() => copyToClipboard(`${serverUrl}/api/mcp`, 'mcp-api')}
                       className="text-xs text-gray-600 hover:text-gray-900"
                     >
-                      {copiedText === 'sse-api' ? 'Copied' : 'Copy'}
-                    </button>
-                  </div>
-                </div>
-
-                <div className="border border-gray-200 rounded-lg p-4">
-                  <code className="font-mono text-sm text-gray-900 block mb-2">/api/messages</code>
-                  <p className="text-sm text-gray-600 mb-3">HTTP POST transport for MCP protocol</p>
-                  <div className="flex items-center justify-between bg-gray-50 border border-gray-200 rounded px-3 py-2">
-                    <code className="text-xs text-gray-700">{serverUrl}/api/messages</code>
-                    <button
-                      onClick={() => copyToClipboard(`${serverUrl}/api/messages`, 'http-api')}
-                      className="text-xs text-gray-600 hover:text-gray-900"
-                    >
-                      {copiedText === 'http-api' ? 'Copied' : 'Copy'}
+                      {copiedText === 'mcp-api' ? 'Copied' : 'Copy'}
                     </button>
                   </div>
                 </div>

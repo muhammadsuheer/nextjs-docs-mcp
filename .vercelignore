@@ -1,0 +1,10 @@
+# Don't upload docs-data to Vercel (built during deployment)
+docs-data/
+
+# Local development files
+.env.local
+.cursor/
+
+# Git directories (created during build)
+**/.git/
+

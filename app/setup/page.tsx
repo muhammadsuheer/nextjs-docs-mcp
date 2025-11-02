@@ -33,8 +33,7 @@ export default function SetupPage() {
       config: `{
   "mcpServers": {
     "nextjs-docs": {
-      "url": "${serverUrl}/api/sse",
-      "transport": "sse"
+      "url": "${serverUrl}/api/mcp"
     }
   }
 }`,
@@ -46,8 +45,7 @@ export default function SetupPage() {
       logo: '/api/placeholder/cursor',
       configFile: 'Settings > MCP Servers',
       config: `Server Name: nextjs-docs
-URL: ${serverUrl}/api/sse
-Transport: SSE`,
+URL: ${serverUrl}/api/mcp`,
       instructions: [
         'Open Settings (Cmd/Ctrl + ,)',
         'Go to Features > MCP Servers',
@@ -63,8 +61,7 @@ Transport: SSE`,
       logo: '/api/placeholder/windsurf',
       configFile: 'Settings > Integrations',
       config: `Name: Next.js Documentation
-URL: ${serverUrl}/api/sse
-Transport: SSE`,
+URL: ${serverUrl}/api/mcp`,
       instructions: [
         'Open Settings',
         'Navigate to Integrations',
@@ -86,7 +83,7 @@ Transport: SSE`,
       config: `{
   "context_servers": {
     "nextjs-docs": {
-      "url": "${serverUrl}/api/sse"
+      "url": "${serverUrl}/api/mcp"
     }
   }
 }`,
@@ -100,7 +97,7 @@ Transport: SSE`,
       config: `{
   "mcpServers": {
     "nextjs-docs": {
-      "url": "${serverUrl}/api/sse"
+      "url": "${serverUrl}/api/mcp"
     }
   }
 }`,
@@ -120,7 +117,7 @@ Transport: SSE`,
   "mcpServers": [
     {
       "name": "nextjs-docs",
-      "url": "${serverUrl}/api/sse"
+      "url": "${serverUrl}/api/mcp"
     }
   ]
 }`,

@@ -1,4 +1,4 @@
-// Main MCP Server Route Handler
+// Main MCP Server Route Handler - Vercel Standard Implementation
 
 import { createMcpHandler } from 'mcp-handler';
 import { z } from 'zod';
@@ -7,34 +7,61 @@ import path from 'path';
 import { getSearchEngine } from '@/lib/search-engine';
 import { getCached, setCached, generateSearchCacheKey, initRedis } from '@/lib/cache';
 import { DOCS_METADATA_PATH, MCP_SERVER_NAME, MCP_SERVER_VERSION } from '@/lib/constants';
+import { autoDetectDocVersion, detectNextVersion, getDocVersionForNextVersion } from '@/lib/version-detector';
 import type { DocMetadata, SearchOptions } from '@/types';
 
-// Initialize search engine
-let searchEngine: ReturnType<typeof getSearchEngine> | null = null;
-let docsLoaded = false;
+// Initialize search engine with multi-version support
+let searchEngines: Map<string, ReturnType<typeof getSearchEngine>> = new Map();
+let versionsLoaded: Set<string> = new Set();
 
-async function ensureDocsLoaded() {
-  if (docsLoaded && searchEngine) return searchEngine;
+async function ensureDocsLoaded(version?: string) {
+  // Auto-detect version from user's package.json if not provided
+  const targetVersion = version || await autoDetectDocVersion();
+  
+  // Check if this version is already loaded
+  if (versionsLoaded.has(targetVersion) && searchEngines.has(targetVersion)) {
+    return searchEngines.get(targetVersion)!;
+  }
   
   try {
-    // Load docs metadata
-    const metadataPath = path.join(process.cwd(), DOCS_METADATA_PATH);
+    // Try version-specific metadata first
+    let metadataPath = path.join(process.cwd(), `data/docs-metadata-v${targetVersion}.json`);
+    
+    // Fallback to default metadata
+    try {
+      await fs.access(metadataPath);
+    } catch {
+      metadataPath = path.join(process.cwd(), DOCS_METADATA_PATH);
+    }
+    
     const content = await fs.readFile(metadataPath, 'utf-8');
     const docs: DocMetadata[] = JSON.parse(content);
     
-    // Initialize search engine
-    searchEngine = getSearchEngine();
-    searchEngine.addDocuments(docs);
+    // Initialize search engine for this version
+    const engine = getSearchEngine();
+    engine.addDocuments(docs);
     
-    docsLoaded = true;
+    searchEngines.set(targetVersion, engine);
+    versionsLoaded.add(targetVersion);
     
-    // Initialize Redis (optional)
-    initRedis();
+    // Initialize Redis (optional) - only once
+    if (versionsLoaded.size === 1) {
+      initRedis();
+    }
     
-    return searchEngine;
+    console.log(`✅ Loaded Next.js ${targetVersion} documentation (${docs.length} docs)`);
+    
+    return engine;
   } catch (error) {
-    throw new Error('Documentation not found. Please run: npm run process-docs && npm run build:index');
+    throw new Error(`Documentation not found for version ${targetVersion}. Please run: npm run process-docs && npm run build:index`);
   }
+}
+
+async function getUserNextVersion(): Promise<string | null> {
+  const versionInfo = await detectNextVersion();
+  if (!versionInfo) return null;
+  
+  return getDocVersionForNextVersion(versionInfo);
 }
 
 const handler = createMcpHandler(
@@ -122,10 +149,14 @@ const handler = createMcpHandler(
       },
       async ({ query, version, category, limit, includeCodeExamples }) => {
         try {
-          const engine = await ensureDocsLoaded();
+          // Auto-detect version from user's package.json if not specified
+          const detectedVersion = await getUserNextVersion();
+          const targetVersion = version === 'latest' ? undefined : (version || detectedVersion || undefined);
+          
+          const engine = await ensureDocsLoaded(targetVersion);
           
           // Check cache first
-          const cacheKey = generateSearchCacheKey(query, { version, category, limit });
+          const cacheKey = generateSearchCacheKey(query, { version: targetVersion, category, limit });
           const cached = await getCached(cacheKey);
           
           if (cached) {

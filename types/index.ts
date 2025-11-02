@@ -42,7 +42,7 @@ export interface SearchMatch {
 
 export interface SearchOptions {
   query: string;
-  version?: '15' | '14' | '13' | 'latest';
+  version?: '16' | '15' | '14' | '13' | 'latest';
   category?: DocMetadata['category'];
   limit?: number;
   includeCodeExamples?: boolean;

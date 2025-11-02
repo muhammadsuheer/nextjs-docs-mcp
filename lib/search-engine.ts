@@ -9,6 +9,21 @@ export class DocumentSearchEngine {
   private index: FlexSearchDocument;
   private documents: Map<string, DocMetadata>;
   
+  // Synonym mapping for common terms and acronyms
+  private synonyms: Record<string, string[]> = {
+    'ssr': ['server-side rendering', 'server side render', 'getServerSideProps'],
+    'ssg': ['static site generation', 'static generation', 'getStaticProps', 'generateStaticParams'],
+    'isr': ['incremental static regeneration', 'revalidate', 'incremental'],
+    'csr': ['client-side rendering', 'client render', 'useEffect'],
+    'rsc': ['react server components', 'server components'],
+    'seo': ['search engine optimization', 'metadata', 'head', 'title', 'description'],
+    'api': ['route handler', 'api route', 'endpoint'],
+    'middleware': ['proxy', 'rewrite', 'redirect'],
+    'error': ['error boundary', 'error handling', 'not-found', '404', '500'],
+    'auth': ['authentication', 'login', 'session', 'jwt', 'cookies'],
+    'cache': ['caching', 'revalidate', 'fetch', 'unstable_cache'],
+  };
+  
   constructor() {
     this.documents = new Map();
     
@@ -45,16 +60,61 @@ export class DocumentSearchEngine {
   }
   
   /**
+   * Expand query with synonyms for better search results
+   */
+  private expandQuery(query: string): string[] {
+    const queries = [query];
+    const lowerQuery = query.toLowerCase();
+    
+    // Check if query contains any synonym keys
+    Object.entries(this.synonyms).forEach(([key, values]) => {
+      if (lowerQuery.includes(key)) {
+        // Add all synonym variations
+        values.forEach(synonym => {
+          const expandedQuery = lowerQuery.replace(key, synonym);
+          if (!queries.includes(expandedQuery)) {
+            queries.push(expandedQuery);
+          }
+        });
+      }
+    });
+    
+    // If query has multiple words, try individual words too
+    const words = query.toLowerCase().split(/\s+/);
+    if (words.length > 3) {
+      // For very long queries, use first 2-3 important words
+      const importantWords = words.filter(w => w.length > 3).slice(0, 3);
+      if (importantWords.length > 0) {
+        queries.push(importantWords.join(' '));
+      }
+    }
+    
+    return queries;
+  }
+  
+  /**
    * Search documents
    */
   async search(options: SearchOptions): Promise<SearchResult[]> {
     const { query, version, category, limit = 10, includeCodeExamples = false } = options;
     
-    // Perform search
-    const searchResults = this.index.search(query, {
-      limit: limit * 2, // Get more results for filtering
-      enrich: true,
-    });
+    // Expand query with synonyms
+    const queries = this.expandQuery(query);
+    
+    // Perform search with all query variations
+    let allSearchResults: any[] = [];
+    for (const q of queries) {
+      const results = this.index.search(q, {
+        limit: limit * 2, // Get more results for filtering
+        enrich: true,
+      });
+      allSearchResults = allSearchResults.concat(results);
+      
+      // If we got good results from first query, don't need more
+      if (allSearchResults.length > 0 && q === query) break;
+    }
+    
+    const searchResults = allSearchResults;
     
     const results: SearchResult[] = [];
     const seenIds = new Set<string>();

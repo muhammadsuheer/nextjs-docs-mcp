@@ -19,7 +19,7 @@ Next.js Documentation MCP Server provides instant access to complete Next.js doc
 - FlexSearch-powered full-text search
 - Upstash Redis caching for 2x faster queries
 - Offline-first architecture
-- Version-aware documentation (Next.js 13, 14, 15)
+- Version-aware documentation (Next.js 13, 14, 15, 16)
 - Zero-configuration deployment on Vercel
 
 ---
@@ -46,28 +46,29 @@ Next.js Documentation MCP Server provides instant access to complete Next.js doc
 Connect to our hosted MCP server instantly:
 
 ```
-https://nextjs-docs-mcp.vercel.app/api/sse
+https://nextjs-docs-mcp.vercel.app/api/mcp
 ```
 
 Add this URL to your AI assistant's MCP configuration and start using Next.js documentation immediately.
 
-### Option 2: Self-Hosted Installation
+### Option 2: Deploy Your Own (One Click)
 
-Deploy your own instance:
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/muhammadsuheer/nextjs-docs-mcp)
+
+**That's it!** Vercel automatically:
+- Downloads all Next.js documentation (v13, 14, 15, 16)
+- Processes and indexes everything
+- Deploys globally on CDN
+- Takes ~3 minutes total
+
+### Option 3: Local Development
 
 ```bash
-# Clone repository
 git clone https://github.com/muhammadsuheer/nextjs-docs-mcp.git
 cd nextjs-docs-mcp
-
-# Install dependencies
 npm install
-
-# Setup documentation and search index
-npm run setup
-
-# Start development server
-npm run dev
+npm run build  # Downloads & processes docs automatically
+npm start
 ```
 
 Server runs at `http://localhost:3000`
@@ -88,8 +89,7 @@ Server runs at `http://localhost:3000`
 {
   "mcpServers": {
     "nextjs-docs": {
-      "url": "https://nextjs-docs-mcp.vercel.app/api/sse",
-      "transport": "sse"
+      "url": "https://nextjs-docs-mcp.vercel.app/api/mcp"
     }
   }
 }
@@ -104,8 +104,7 @@ Server runs at `http://localhost:3000`
 3. Click "Add Server"
 4. Enter server details:
    - Name: `nextjs-docs`
-   - URL: `https://nextjs-docs-mcp.vercel.app/api/sse`
-   - Transport: `SSE`
+   - URL: `https://nextjs-docs-mcp.vercel.app/api/mcp`
 5. Save configuration
 
 ### Windsurf IDE Integration
@@ -113,7 +112,7 @@ Server runs at `http://localhost:3000`
 1. Open Settings → Integrations → Model Context Protocol
 2. Add new MCP server:
    - Display Name: `Next.js Documentation`
-   - Endpoint: `https://nextjs-docs-mcp.vercel.app/api/sse`
+   - Endpoint: `https://nextjs-docs-mcp.vercel.app/api/mcp`
 3. Enable the integration
 
 ### Cline VSCode Extension
@@ -127,7 +126,7 @@ Add to Cline MCP settings:
       "command": "npx",
       "args": ["-y", "nextjs-docs-mcp"],
       "env": {
-        "MCP_SERVER_URL": "https://nextjs-docs-mcp.vercel.app/api/sse"
+        "MCP_SERVER_URL": "https://nextjs-docs-mcp.vercel.app/api/mcp"
       }
     }
   }
@@ -144,7 +143,7 @@ Search Next.js documentation with advanced filtering options.
 
 **Parameters:**
 - `query` (string, required): Search query text
-- `version` (string, optional): Filter by Next.js version ("13", "14", "15", "latest")
+- `version` (string, optional): Filter by Next.js version ("13", "14", "15", "16", "latest")
 - `category` (string, optional): Documentation category ("app-router", "pages-router", "api-reference", "architecture", "community")
 - `limit` (number, optional): Maximum results (1-50, default: 10)
 - `includeCodeExamples` (boolean, optional): Include code snippets (default: true)
@@ -228,7 +227,7 @@ export default async function Page() {
 
 **Query to AI Assistant:**
 ```
-Show me complete documentation for data fetching in Next.js 15
+Show me complete documentation for data fetching in Next.js 15/16
 ```
 
 **MCP Tool Call:**
@@ -448,15 +447,50 @@ Build process automatically:
 
 ---
 
+## Testing with MCP Inspector
+
+### Local Testing
+
+Test your MCP server locally before deployment using the official MCP Inspector:
+
+```bash
+# Start your development server
+npm run dev
+
+# In a new terminal, run the MCP Inspector
+npx @modelcontextprotocol/inspector@latest http://localhost:3000
+```
+
+The Inspector will open at `http://127.0.0.1:6274`. Configure it:
+1. **Transport**: Select `Streamable HTTP`
+2. **URL**: Enter `http://localhost:3000/api/mcp`
+3. **Configuration**: Expand and paste the Proxy Session Token from terminal
+4. **Connect**: Click connect button
+
+Test available tools:
+- Click "List Tools" to see `search_nextjs_docs`, `get_nextjs_doc`, `list_nextjs_categories`
+- Click on any tool to test with parameters
+- View results in real-time
+
+### Production Testing
+
+After deploying to Vercel:
+
+```bash
+npx @modelcontextprotocol/inspector@latest https://your-project.vercel.app
+```
+
+Connect to: `https://your-project.vercel.app/api/mcp`
+
+---
+
 ## API Reference
 
 ### HTTP Endpoints
 
-#### GET /api/sse
-Server-Sent Events transport for MCP protocol. Used by Claude Desktop and streaming clients.
-
-#### POST /api/messages
-HTTP POST transport for MCP protocol. Used by standard HTTP clients.
+#### GET /POST /DELETE /api/mcp
+Standard Vercel MCP endpoint supporting all MCP protocol methods (GET, POST, DELETE).
+This is the recommended endpoint for all MCP clients including Claude Desktop, Cursor, Windsurf, and others.
 
 #### GET /api/test-redis
 Test Redis connection status and caching functionality.
@@ -721,8 +755,8 @@ npm run build:index
 - Network/firewall blocking connection
 
 **Solutions:**
-1. Verify server URL: `http://localhost:3000/api/sse` (local) or your deployed URL
-2. Test endpoint: `curl http://localhost:3000/api/sse`
+1. Verify server URL: `http://localhost:3000/api/mcp` (local) or your deployed URL
+2. Test endpoint: `curl http://localhost:3000/api/mcp`
 3. Check Claude Desktop logs for detailed error
 4. Restart Claude Desktop after config changes
 
