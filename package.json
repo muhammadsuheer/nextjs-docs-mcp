@@ -9,7 +9,8 @@
     "build:index": "tsx scripts/build-search-index.ts",
     "start": "next start",
     "lint": "eslint",
-    "process-docs": "tsx scripts/process-docs.ts"
+    "process-docs": "tsx scripts/process-docs.ts",
+    "setup": "npm run process-docs && npm run build:index"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.20.2",
