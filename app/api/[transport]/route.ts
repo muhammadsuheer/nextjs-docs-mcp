@@ -359,7 +359,7 @@ const handler = createMcpHandler(
     version: MCP_SERVER_VERSION,
   },
   {
-    redisUrl: process.env.UPSTASH_REDIS_REST_URL,
+    redisUrl: process.env.KV_REST_API_URL,
     basePath: '/api',
     maxDuration: 300,
     verboseLogs: process.env.MCP_VERBOSE_LOGS === 'true',
