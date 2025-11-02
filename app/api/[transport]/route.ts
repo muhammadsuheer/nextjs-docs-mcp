@@ -37,22 +37,22 @@ async function ensureDocsLoaded() {
   }
 }
 
-const handler = createMcpHandler(
-  (server) => {
+const handler = createMcpHandler((server) => {
     
     // ==================== RESOURCES ====================
     
     server.resource(
+      'nextjs-docs',
       'nextjs://docs/{path}',
-      'Get full content of a specific Next.js documentation page',
-      async ({ path }: { path: string }) => {
+      async (uri: URL) => {
         const engine = await ensureDocsLoaded();
+        const path = uri.pathname.replace('/docs/', '');
         const doc = engine.getDocument(path);
         
         if (!doc) {
           return {
             contents: [{
-              uri: `nextjs://docs/${path}`,
+              uri: uri.toString(),
               mimeType: 'text/plain',
               text: `Document not found: ${path}`,
             }],
@@ -61,7 +61,7 @@ const handler = createMcpHandler(
         
         return {
           contents: [{
-            uri: `nextjs://docs/${path}`,
+            uri: uri.toString(),
             mimeType: 'text/markdown',
             text: `# ${doc.title}\n\n${doc.description}\n\n${doc.content}`,
           }],
@@ -70,10 +70,11 @@ const handler = createMcpHandler(
     );
     
     server.resource(
+      'nextjs-search',
       'nextjs://search?q={query}',
-      'Search Next.js documentation',
-      async ({ query }: { query: string }) => {
+      async (uri: URL) => {
         const engine = await ensureDocsLoaded();
+        const query = uri.searchParams.get('q') || '';
         const results = await engine.search({ query, limit: 10 });
         
         const formatted = results.map(r => ({
@@ -86,7 +87,7 @@ const handler = createMcpHandler(
         
         return {
           contents: [{
-            uri: `nextjs://search?q=${query}`,
+            uri: uri.toString(),
             mimeType: 'application/json',
             text: JSON.stringify(formatted, null, 2),
           }],
@@ -309,10 +310,10 @@ const handler = createMcpHandler(
         concept: z.string()
           .describe('The Next.js concept to explain (e.g., "Server Components", "App Router", "Data Fetching")'),
         level: z.enum(['beginner', 'intermediate', 'advanced'])
-          .default('intermediate')
-          .describe('Explanation depth level'),
+          .optional()
+          .describe('Explanation depth level (default: intermediate)'),
       },
-      async ({ concept, level }) => {
+      async ({ concept, level = 'intermediate' }) => {
         return {
           messages: [{
             role: 'user',
@@ -353,18 +354,8 @@ const handler = createMcpHandler(
       }
     );
     
-  },
-  {
-    name: MCP_SERVER_NAME,
-    version: MCP_SERVER_VERSION,
-  },
-  {
-    redisUrl: process.env.KV_REST_API_URL,
-    basePath: '/api',
-    maxDuration: 300,
-    verboseLogs: process.env.MCP_VERBOSE_LOGS === 'true',
-  }
-);
+  });
+
 
 export { handler as GET, handler as POST };
 

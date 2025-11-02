@@ -55,3 +55,9 @@ export interface ProcessedDoc {
   searchableContent: string;
 }
 
+export interface CacheEntry<T = any> {
+  data: T;
+  timestamp: number;
+  ttl: number;
+}
+

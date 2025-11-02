@@ -3,15 +3,17 @@
 import FlexSearch from 'flexsearch';
 import type { DocMetadata, SearchResult, SearchOptions, SearchMatch } from '@/types';
 
+type FlexSearchDocument = any;
+
 export class DocumentSearchEngine {
-  private index: FlexSearch.Document<DocMetadata, true>;
+  private index: FlexSearchDocument;
   private documents: Map<string, DocMetadata>;
   
   constructor() {
     this.documents = new Map();
     
     // Create FlexSearch index with optimized settings
-    this.index = new FlexSearch.Document<DocMetadata, true>({
+    this.index = new (FlexSearch as any).Document({
       document: {
         id: 'id',
         index: ['title', 'content', 'description'],
