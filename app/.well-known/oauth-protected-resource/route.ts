@@ -14,7 +14,7 @@ import { NextResponse } from 'next/server';
 
 // List of authorization servers that can issue valid tokens
 // Update these URLs with your actual OAuth provider(s)
-const AUTH_SERVER_URLS = [
+const AUTH_SERVER_URLS: string[] = [
   // Example: 'https://your-auth-provider.com',
   // For now, this is disabled as the server doesn't require OAuth
 ];
