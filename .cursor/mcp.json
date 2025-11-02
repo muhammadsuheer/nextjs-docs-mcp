@@ -1,9 +1,3 @@
 {
-  "mcpServers": {
-    "nextjs-docs": {
-      "url": "http://localhost:3000/api/mcp",
-      "description": "Next.js Documentation MCP Server - Local Development"
-    }
-  }
+  "mcpServers": {}
 }
-
