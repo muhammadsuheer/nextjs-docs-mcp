@@ -31,10 +31,7 @@ Thumbs.db
 *.swo
 *~
 
-# Build artifacts
+# Build artifacts (generated during build)
 /data/search-index.json
 /data/docs-metadata.json
 /data/embeddings.json
-
-# Docs (downloaded separately)
-/docs-data

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "npm run build:index && next build",
+    "build": "npm run process-docs && npm run build:index && next build",
     "build:index": "tsx scripts/build-search-index.ts",
     "start": "next start",
     "lint": "eslint",
