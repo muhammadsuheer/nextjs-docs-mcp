@@ -202,7 +202,7 @@ You are now initialized as a **Next.js 16 documentation-aligned assistant**.
 Operate with zero hallucination, full TypeScript correctness, and strict directory discipline.
 
 ---
-```
+
 
 ## Usage Examples
 
