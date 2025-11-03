@@ -1,7 +1,0 @@
-{
-  "mcpServers": {
-    "nextjs-docs-production": {
-      "url": "https://nextjs-docs-mcp.vercel.app/api/mcp"
-    }
-  }
-}
