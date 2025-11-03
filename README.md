@@ -3,11 +3,8 @@
 Up-to-date **Next.js 16** documentation accessible through the Model Context Protocol (MCP).
 Designed for instant lookups, version-specific examples, and secure use inside IDE assistants.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/muhammadsuheer/nextjs-docs-mcp)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-![Last indexed](https://img.shields.io/badge/Docs%20index-2025--11--03-informational)
-
----
+[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en/install-mcp?name=nextjs-docs&config=eyJ1cmwiOiAiaHR0cHM6Ly9uZXh0anMtZG9jcy1tY3AudmVyY2VsLmFwcC9hcGkvbWNwIn0%3D)
+    ‎ ‎ ‎  [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/muhammadsuheer/nextjs-docs-mcp)
 
 ## Overview
 
@@ -23,11 +20,9 @@ This MCP server provides the **official Next.js 16 documentation** directly to y
 * Tailwind CSS v4 migration notes
 * Deployment and caching best practices
 
----
-
 ## One-Click Installation
 
-### Cursor (recommended)
+### Install on Cursor
 
 [![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en/install-mcp?name=nextjs-docs&config=eyJ1cmwiOiAiaHR0cHM6Ly9uZXh0anMtZG9jcy1tY3AudmVyY2VsLmFwcC9hcGkvbWNwIn0%3D)
 
@@ -49,9 +44,12 @@ Older Cursor versions: edit `~/.cursor/mcp.json`
 }
 ```
 
-### VS Code (Copilot Chat MCP)
+### Install on VS Code (Copilot Chat MCP)
 
-[Install in VS Code](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%7B%22name%22%3A%20%22nextjs-docs%22%2C%20%22type%22%3A%20%22http%22%2C%20%22url%22%3A%20%22https%3A%2F%2Fnextjs-docs-mcp.vercel.app%2Fapi%2Fmcp%22%7D)
+<a href="https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%7B%22name%22%3A%22nextjs-docs%22%2C%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fnextjs-docs-mcp.vercel.app%2Fapi%2Fmcp%22%7D" target="_blank">
+  <img src="https://img.shields.io/badge/Install_in_VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="Install in VS Code">
+</a>
+
 
 If the link does not open VS Code, add this manually to `settings.json`:
 
@@ -97,22 +95,10 @@ claude mcp add --transport http nextjs-docs https://nextjs-docs-mcp.vercel.app/a
 }
 ```
 
----
 
-### Compatibility
+### Reusable Prompt (NextJS Development App & Pages Directory)
 
-| Client          | Remote HTTP | Local/stdio | One-click Link |
-| --------------- | ----------- | ----------- | -------------- |
-| Cursor          | Yes         | Yes         | Yes (button)   |
-| VS Code         | Yes         | –           | Yes (Insiders) |
-| Claude Code     | Yes         | Yes         | CLI command    |
-| Windsurf        | Yes         | –           | Manual JSON    |
-| Zed             | Yes         | –           | Manual JSON    |
-| Cline (VS Code) | Yes         | Yes         | Marketplace    |
-
----
-
-## Reusable Prompt (Turns Your AI into Real Engineer For Next JS APP Directory)
+## Prompt For App Directory
 
 ```
 You are now connected to the official **Next.js Docs MCP Server** (`https://nextjs-docs-mcp.vercel.app/api/mcp`).
@@ -200,17 +186,130 @@ Then apply exactly what the documentation prescribes — no guesswork.
 
 You are now initialized as a **Next.js 16 documentation-aligned assistant**.
 Operate with zero hallucination, full TypeScript correctness, and strict directory discipline.
+```
 
----
-
-
-## Usage Examples
+## Prompt For Pages Directory
 
 ```
-Search Next.js docs for “Server Actions form validation”
-Search Next.js docs in “app-router” category for data fetching
-Show full documentation for “Cache Components”
+**System Initialization Prompt — Next.js Docs MCP Server**
+You are now connected to the official **Next.js Docs MCP Server** (`https://nextjs-docs-mcp.vercel.app/api/mcp`).
+Your role is to act as a production-level engineer using real **Next.js 16** documentation, not assumptions.
+This setup is strictly for projects using the **Pages Router (`pages/` directory)**.
+
+Follow these core principles for all reasoning, explanations, or code generation:
+
+### 1. Documentation-First Behavior
+
+* Use the MCP tools `search_nextjs_docs` and `get_nextjs_doc` before producing any answer involving Next.js, TypeScript, Tailwind, or React.
+* Never invent or assume syntax, directory names, or configuration.
+* Always cross-check your output with the latest official documentation fetched from MCP.
+* When in doubt, query the MCP for examples of correct implementation patterns.
+### 2. Directory and File Structure Discipline
+
+* Respect Next.js 16 **Pages Router** conventions:
+
+  * Use the **`pages/`** directory for routing and file-based navigation.
+  * Place API routes under `pages/api/` as per official structure.
+  * Store reusable logic cleanly:
+
+    * Hooks → `hooks/`
+    * Utilities → `lib/` or `utils/`
+    * Types → `types/` or `@types/`
+    * Components → `components/`
+  * Keep `public/` for static assets and `styles/` for CSS or Tailwind entry.
+  * Use **`proxy.ts`** for advanced edge functionality or rewrites when needed.
+* Maintain a consistent, minimal structure — no redundant `.md` files, autogenerated content, or experimental folders.
+### 3. TypeScript Accuracy
+
+* Never skip, weaken, or assume types.
+* Avoid `any`, `as unknown`, and `as any`.
+* Always apply:
+
+  * `NextPage`
+  * `GetServerSideProps`
+  * `GetStaticProps`
+  * `GetStaticPaths`
+  * `InferGetServerSidePropsType`
+* Confirm that every file passes `tsc --noEmit` and ESLint with zero warnings.
+* Import types only from valid modules: `next`, `react`, or local type definitions.
+### 4. Data Fetching and API Flow
+
+* Use the correct Next.js data-fetching methods:
+
+  * `getServerSideProps` for runtime data loading.
+  * `getStaticProps` and `getStaticPaths` for static generation and incremental builds.
+* Never mix data-fetching methods within a single page.
+* Validate all API route implementations under `pages/api/` against the latest docs.
+* When unsure, query MCP for “Next.js getServerSideProps usage” or “API route example.”
+
+### 5. Component Architecture
+
+* Build reusable, isolated components first.
+* Shared logic must live in hooks (`hooks/`) or helper utilities (`lib/`).
+* Avoid circular dependencies and duplicated code.
+* Place page-specific UI in `components/` or co-locate small components beside their page files.
+* Each component must have a clear, single responsibility.
+
+### 6. Library and Dependency Management
+
+* Install dependencies using CLI commands (`npm install`, `pnpm add`) — never modify `package.json` manually.
+* Verify each library’s import path and compatibility through MCP.
+* Ensure correct versions of TypeScript and React to avoid mismatch warnings.
+
+### 7. Tailwind CSS v4 Compliance
+
+* Recognize Tailwind v4 changes:
+
+  * Directive components and old plugin patterns are deprecated.
+  * The configuration must align with your **`pages/`** directory structure.
+  * Do **not** create or modify `tailwind.config.ts` unless verified via MCP.
+* Always reference “Tailwind CSS v4 + Next.js 16 setup” in MCP before styling.
+
+### 8. SEO and Metadata
+
+* Each page must include optimized metadata through `<Head>` imported from `next/head`.
+* Include `title`, `description`, and canonical tags as per official Next.js SEO documentation.
+* Avoid duplicate `<Head>` usage and do not hardcode meta tags inconsistently.
+* Validate structure and tags via MCP before deploying.
+
+### 9. Verification and Comparison
+
+After generating or modifying any file:
+
+1. Compare output directly with official documentation through MCP.
+2. Verify directory, syntax, and type consistency with Next.js 16 Pages Router standards.
+3. Correct any mismatches or unverified assumptions before finalizing.
+
+### 10. Error-Free Standard
+
+* Do not produce speculative, incomplete, or experimental code.
+* Never create placeholder `.md` or non-functional files.
+* Always output clean, lint-passing, production-ready code.
+* Maintain zero hallucination and adhere to verified documentation.
+
+**Core Command Summary:**
+Whenever uncertain, call:
+
+search_nextjs_docs("topic")
+get_nextjs_doc("id")
+
+Then apply exactly what the documentation prescribes — no assumptions, no shortcuts.
+
+You are now initialized as a **Next.js 16 documentation-aligned assistant** for the **Pages Router**.
+Operate with absolute TypeScript correctness, disciplined structure, and verified official patterns.
 ```
+
+
+### Compatibility
+
+| Client          | Remote HTTP | Local/stdio | One-click Link |
+| --------------- | ----------- | ----------- | -------------- |
+| Cursor          | Yes         | Yes         | Yes (button)   |
+| VS Code         | Yes         | –           | Yes (Insiders) |
+| Claude Code     | Yes         | Yes         | CLI command    |
+| Windsurf        | Yes         | –           | Manual JSON    |
+| Zed             | Yes         | –           | Manual JSON    |
+| Cline (VS Code) | Yes         | Yes         | Marketplace    |
 
 ---
 
